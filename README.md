@@ -2,7 +2,7 @@
 
 ## Sources:
 
-### History
+### History
 
 - https://gallica.bnf.fr/ark:/12148/bpt6k6322183q/f43.image
 - Evolution of the typewriter https://www.loc.gov/item/17027959/ 
@@ -11,7 +11,7 @@
 - https://en.wikipedia.org/wiki/Teleprinter
 - https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys
 
-### Layout sizes
+### Layout sizes
 
 - https://www.nytimes.com/wirecutter/reviews/our-favorite-mechanical-keyboards/
 - wasd https://www.vectorstock.com/royalty-free-vector/wasd-keyboard-buttons-icon-game-control-icon-vector-38066281 
