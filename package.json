@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist"
   },
   "devDependencies": {
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "reveal.js": "^4.4.0"
   }
 }
