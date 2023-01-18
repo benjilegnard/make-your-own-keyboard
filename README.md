@@ -22,6 +22,15 @@
 - https://aposymbiont.github.io/split-keyboards/
 - https://github.com/diimdeep/awesome-split-keyboards#readme
 
+### Ergonomics
+
+- https://www.ameli.fr/assure/sante/themes/tms/comprendre-troubles-musculosquelettiques
+- 
+
+### Keycaps
+
+- https://switchandclick.com/ultimate-guide-to-picking-a-keycap-set-for-your-mechanical-keyboard/
+
 ### Programming the controller
 
 - official site : https://qmk.fm/
@@ -42,3 +51,8 @@
 
 - A guide to weirds keyboards https://www.youtube.com/watch?v=SkNGxM4LRKQ
 - How Keyboards & Mice Are Made - China Factory Tour https://www.youtube.com/watch?v=GdwkFLLdgYI
+
+### Random other sources
+
+- https://deskthority.net/wiki/Main_Page
+- https://en.wikipedia.org/wiki/Tiling_window_manager
