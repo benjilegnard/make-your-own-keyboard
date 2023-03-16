@@ -14,5 +14,6 @@ deck.initialize({
   controls: true,
   hashOneBasedIndex: true,
   hash: true,
+  transition: "none",
   history: true,
 });
