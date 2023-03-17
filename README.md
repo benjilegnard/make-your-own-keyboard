@@ -56,3 +56,11 @@
 
 - https://deskthority.net/wiki/Main_Page
 - https://en.wikipedia.org/wiki/Tiling_window_manager
+
+
+### TODO
+
+- détailler un peu bépo et dvorak => expert gonna be experts
+- ne pas réduire les switches à bruyants ou pas => nerds gonna be nerds
+- lier mieux la construction aux "inventaires" de touches, switches, etc...
+- améliorer le storytelling sur les soudures
