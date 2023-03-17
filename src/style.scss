@@ -13,7 +13,7 @@
 @import url("https://fonts.bunny.net/css2?family=Poppins:wght@700&family=Source+Sans+Pro&display=swap");
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #FFF;
+$backgroundColor: #fff;
 
 $mainColor: #222;
 $headingColor: #222;
@@ -40,3 +40,8 @@ $heading4Size: 1em;
 // Theme template ------------------------------
 @import "reveal.js/css/theme/template/theme";
 // ---------------------------------------------
+kbd {
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  padding: 0 4px;
+}
