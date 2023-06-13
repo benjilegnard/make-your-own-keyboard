@@ -9,11 +9,14 @@ let deck = new Reveal({
   plugins: [Markdown, Notes],
 });
 
-deck.initialize({
-  progress: false,
-  controls: true,
-  hashOneBasedIndex: true,
-  hash: true,
-  transition: "none",
-  history: true,
-});
+deck
+  .initialize({
+    progress: false,
+    controls: true,
+    hashOneBasedIndex: true,
+    hash: true,
+    transition: "none",
+    history: true,
+  })
+  .then(() => console.log("reveal.js api initialized"))
+  .catch((err) => console.error(err));

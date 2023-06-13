@@ -45,3 +45,16 @@ kbd {
   border-radius: 8px;
   padding: 0 4px;
 }
+
+.source{
+  font-size: 1.5rem ;
+}
+
+.qr-codes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.qr-codes a{
+  display: block;
+}

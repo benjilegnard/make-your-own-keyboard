@@ -1,4 +1,6 @@
-# A talk about keyboards
+# A talk about split keyboards
+
+Les slides sont disponibles ici : <https://benjilegnard.github.io/make-your-own-keyboard/#/>
 
 ## Sources:
 
@@ -40,6 +42,7 @@
 
 ### build and issues encountered
 
+- myself :shrug:
 
 ### Online shops:
 
