@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Reorganised with TEXT EDITOR (gedit under Ubuntu).
+     This file is the general file for the USA Dvorak alphanumerical keyboard :
+     - it uses style sheet (css) [see details at section "style"]
+     - it displays the standard pad
+     - and optionnaly
+        * for some keys : the draw and/or the text (↹ and/or TAB …)
+     - keys and inscriptions are geographically referenced : "kb" + line(number) + range(letter) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="svg2" version="1.0" xml:space="preserve" sodipodi:version="0.32" inkscape:version="0.47 r22583" inkscape:output_extension="org.inkscape.output.svg.inkscape" sodipodi:docname="KB_USA_Dvorak_text.svg" width="800" height="247" viewBox="0 0 801 248" style="display: inline;">
+
+  <metadata id="metadata316">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview id="base" inkscape:window-width="1680" inkscape:window-height="981" inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" showguides="true" inkscape:guide-bbox="true" inkscape:zoom="1.2" inkscape:cx="473.3685" inkscape:cy="154.94589" inkscape:current-layer="DrawedInscr" inkscape:window-x="-4" inkscape:window-y="46" showgrid="true" inkscape:window-maximized="1" inkscape:snap-bbox="true" inkscape:bbox-nodes="true" inkscape:snap-nodes="true" inkscape:snap-grids="true" inkscape:bbox-paths="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" units="px" inkscape:snap-bbox-edge-midpoints="false" inkscape:snap-bbox-midpoints="false" inkscape:snap-global="true" inkscape:snap-page="true" inkscape:snap-smooth-nodes="true">
+  </sodipodi:namedview>
+<defs id="defs4"><inkscape:perspective sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 123.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="800 : 123.5 : 1" inkscape:persp3d-origin="400 : 82.333333 : 1" id="perspective3234"/>
+   <marker id="TriangleOutM" inkscape:stockid="TriangleOutM" style="overflow: visible;" orient="auto" refY="0" refX="0">
+    <path id="path4356" style="fill-rule: evenodd; stroke: black; stroke-width: 1pt; marker-start: none;" d="M 5.77,0 -2.88,5 -2.88,-5 5.77,0 z" transform="scale(0.4)" inkscape:connector-curvature="0"/>
+  </marker>
+  <style id="style6" type="text/css">
+
+<!--  General     : «#» style for «id» ; «.» class style (for particular style in group)
+      DRAW styles : K_ : particular key style
+      TEXT styles : «text» : common style for all text | T_ : text style | _L : large ; _s : very small -->
+    
+    
+
+      text            { writing-mode:lr-tb;font-weight:bold;font-family:Nimbus Sans L, Arial, sans-serif ;}
+
+      #T_others       { font-size:16px; text-align:start ;text-anchor:start ;}
+      #T_alterninsc   { font-size:14px; fill:dimgray    ;fill-opacity:1 ;stroke:none; text-align:start ;text-anchor:start ;}
+      #T_stdletters   { font-size:21px; fill:black      ;fill-opacity:1 ;stroke:none; text-align:center;text-anchor:middle;}
+      #T_stdspecial   { font-size:18px; fill:black      ;fill-opacity:1 ;stroke:none; text-align:center;text-anchor:middle;}
+      #T_intodisuse   { font-size:18px; fill:dimgray    ;fill-opacity:1 ;stroke:none; text-align:center;text-anchor:middle;}
+      #T_AltGr        { font-size:18px; fill:blue       ;fill-opacity:1 ;stroke:none; text-align:center;text-anchor:middle;}
+      #T_AltGrSh      { font-size:18px; fill:dodgerblue ;fill-opacity:1 ;stroke:none; text-align:center;text-anchor:middle;}
+      .T_UpAltGr      { font-size:18px; fill:skyblue    ;}
+      .T_DeadKey      { font-size:21px; fill:red        ;font-family:sans ;}
+
+      #T_Lx_AltGr     { font-size:18px; fill:purple     ;fill-opacity:1 ;stroke:none; text-align:center;text-anchor:middle;}
+      #T_Lx_AltGrSh   { font-size:18px; fill:blueviolet ;fill-opacity:1 ;stroke:none; text-align:center;text-anchor:middle;}
+      .T_Lx_UpAltGr   { font-size:18px; fill:violet     ;font-family:Sans;}
+      .T_Lx_DeadKey   { font-size:21px; fill:darkorange ;fill-opacity:1 ;stroke:darkorange;stroke-width:0.6;}
+
+      .T_size_s       { font-size:12px; fill:black      ;fill-opacity:1 ;stroke:none; text-align:start ;text-anchor:start ;}
+      .T_size_L       { font-size:21px; }
+
+      #GlyphKey       { fill:white      ;stroke:grey   ;stroke-width:1;}
+      #ModifKey       { fill:gainsboro  ;stroke:grey   ;stroke-width:1;}
+      #OtherKey       { fill:silver     ;stroke:grey   ;stroke-width:1;}
+      .K_AltGr        { fill:lightblue  ;stroke:grey   ;stroke-width:1;}
+
+     
+       
+    </style>        
+</defs>
+<!-- ========  Keyboard background ======== -->
+<g inkscape:groupmode="layer" id="layer1" inkscape:label="Background" style="display: inline;" sodipodi:insensitive="true">
+      <rect id="Bckgrd" x="0" y="0" width="801" height="248" style="fill: wheat; stroke: none;"/>
+</g>
+
+<!-- ========     Keys      ======== -->
+<g inkscape:groupmode="layer" id="layer2" inkscape:label="Keys" style="display: inline;" sodipodi:insensitive="true">
+  <g id="GlyphKey">
+<!-- Num keys - Standard letters keys - Specials glyphs keys - Ponctuation keys -->
+    <rect id="K_kb2a" x="2" y="2" width="48" height="44" rx="6" ry="6"/>
+    <use id="K_kb2b" xlink:href="#K_kb2a" transform="translate(54)"/>
+    <use id="K_kb2c" xlink:href="#K_kb2a" transform="translate(108)"/>
+    <use id="K_kb2d" xlink:href="#K_kb2a" transform="translate(162)"/>
+    <use id="K_kb2e" xlink:href="#K_kb2a" transform="translate(216)"/>
+    <use id="K_kb2f" xlink:href="#K_kb2a" transform="translate(270)"/>
+    <use id="K_kb2g" xlink:href="#K_kb2a" transform="translate(324)"/>
+    <use id="K_kb2h" xlink:href="#K_kb2a" transform="translate(378)"/>
+    <use id="K_kb2i" xlink:href="#K_kb2a" transform="translate(432)"/>
+    <use id="K_kb2j" xlink:href="#K_kb2a" transform="translate(486)"/>
+    <use id="K_kb2k" xlink:href="#K_kb2a" transform="translate(540)"/>
+    <use id="K_kb2l" xlink:href="#K_kb2a" transform="translate(594)"/>
+    <use id="K_kb2m" xlink:href="#K_kb2a" transform="translate(648)"/>
+
+    <use id="K_kb3b" xlink:href="#K_kb2a" transform="translate(80, 50)"/>
+    <use id="K_kb3c" xlink:href="#K_kb2a" transform="translate(134, 50)"/>
+    <use id="K_kb3d" xlink:href="#K_kb2a" transform="translate(188, 50)"/>
+    <use id="K_kb3e" xlink:href="#K_kb2a" transform="translate(242, 50)"/>
+    <use id="K_kb3f" xlink:href="#K_kb2a" transform="translate(296, 50)"/>
+    <use id="K_kb3g" xlink:href="#K_kb2a" transform="translate(350, 50)"/>
+    <use id="K_kb3h" xlink:href="#K_kb2a" transform="translate(404, 50)"/>
+    <use id="K_kb3i" xlink:href="#K_kb2a" transform="translate(458, 50)"/>
+    <use id="K_kb3j" xlink:href="#K_kb2a" transform="translate(512, 50)"/>
+    <use id="K_kb3k" xlink:href="#K_kb2a" transform="translate(566, 50)"/>
+    <use id="K_kb3l" xlink:href="#K_kb2a" transform="translate(620, 50)"/>
+    <use id="K_kb3m" xlink:href="#K_kb2a" transform="translate(674, 50)"/>
+    <rect id="K_kb3n" x="730" y="52" width="70" height="44" rx="6" ry="6"/>
+
+    <use id="K_kb4b" xlink:href="#K_kb2a" transform="translate(96, 100)"/>
+    <use id="K_kb4c" xlink:href="#K_kb2a" transform="translate(150, 100)"/>
+    <use id="K_kb4d" xlink:href="#K_kb2a" transform="translate(204, 100)"/>
+    <use id="K_kb4e" xlink:href="#K_kb2a" transform="translate(258, 100)"/>
+    <use id="K_kb4f" xlink:href="#K_kb2a" transform="translate(312, 100)"/>
+    <use id="K_kb4g" xlink:href="#K_kb2a" transform="translate(366, 100)"/>
+    <use id="K_kb4h" xlink:href="#K_kb2a" transform="translate(420, 100)"/>
+    <use id="K_kb4i" xlink:href="#K_kb2a" transform="translate(474, 100)"/>
+    <use id="K_kb4j" xlink:href="#K_kb2a" transform="translate(528, 100)"/>
+    <use id="K_kb4k" xlink:href="#K_kb2a" transform="translate(582, 100)"/>
+    <use id="K_kb4l" xlink:href="#K_kb2a" transform="translate(636, 100)"/>
+    <use id="K_kb4m" xlink:href="#K_kb2a" transform="translate(690, 100)"/>
+
+    <use id="K_kb5c" xlink:href="#K_kb2a" transform="translate(116, 150)"/>
+    <use id="K_kb5d" xlink:href="#K_kb2a" transform="translate(170, 150)"/>
+    <use id="K_kb5e" xlink:href="#K_kb2a" transform="translate(224, 150)"/>
+    <use id="K_kb5f" xlink:href="#K_kb2a" transform="translate(278, 150)"/>
+    <use id="K_kb5g" xlink:href="#K_kb2a" transform="translate(332, 150)"/>
+    <use id="K_kb5h" xlink:href="#K_kb2a" transform="translate(386, 150)"/>
+    <use id="K_kb5i" xlink:href="#K_kb2a" transform="translate(440, 150)"/>
+    <use id="K_kb5j" xlink:href="#K_kb2a" transform="translate(494, 150)"/>
+    <use id="K_kb5k" xlink:href="#K_kb2a" transform="translate(548, 150)"/>
+    <use id="K_kb5l" xlink:href="#K_kb2a" transform="translate(602, 150)"/>
+
+    <rect id="K_kb6d" x="188" y="202" width="364" height="44" rx="6" ry="6"/>
+  </g>
+
+<!-- Modification keys -->
+  <g id="ModifKey">
+    <rect id="K_kb4a" x="2" y="102" width="90" height="44" rx="6" ry="6"/>
+    <rect id="K_kb5a" x="2" y="152" width="110" height="44" rx="6" ry="6"/>
+    <rect id="K_kb5m" x="658" y="152" width="142" height="44" rx="6" ry="6"/>
+  </g>
+  
+<!-- Other keys -->
+  <g id="OtherKey">
+<!-- Backspace  --> <rect id="K_kb2n" x="704" y="2" width="96" height="44" rx="6" ry="6"/>
+
+<!-- Tabulation --> <rect id="K_kb3a" x="2" y="52" width="74" height="44" rx="6" ry="6"/>
+
+<!-- Enter key --> 
+    <rect id="K_kb4n" x="692" y="102" width="107" height="44" rx="6" ry="6"/>
+
+<!-- Ctrl 1 --> <rect id="K_kb6a" x="2" y="202" width="56" height="44" rx="6" ry="6"/>
+<!-- Win  1 --> <rect id="K_kb6b" x="64" y="202" width="56" height="44" rx="6" ry="6"/>
+<!-- Alt  1 --> <rect id="K_kb6c" x="126" y="202" width="56" height="44" rx="6" ry="6"/>
+<!-- Alt  2 --> <rect id="K_kb6k" x="558" y="202" width="56" height="44" rx="6" ry="6"/>
+<!-- Win  2 --> <rect id="K_kb6l" x="620" y="202" width="56" height="44" rx="6" ry="6"/>
+<!-- Menu   --> <rect id="K_kb6m" x="682" y="202" width="56" height="44" rx="6" ry="6"/>
+<!-- Ctrl 2 --> <rect id="K_kb6n" x="744" y="202" width="56" height="44" rx="6" ry="6"/>
+  </g>
+  
+</g>
+<!-- ========     Key signs    ======== -->
+<g inkscape:groupmode="layer" id="DrawedInscr" inkscape:label="DrawedInscr" style="display:inline">
+  
+<!-- Windows keys -->
+  
+  
+<!--   Menu key     -->
+  <g id="S_kb6m">
+    <rect id="Menu-1" x="690" y="214" width="16" height="20" style="fill:#d2cfcf;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"/>
+    <path id="Menu-2" style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter" d="m 691.5,214 13,0 m -13,5 13,0"/>
+    <path id="Menu-3" style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter" d="m 693,223 10,0 m -10,4 10,0 m -10,4 10,0"/>
+    <path id="Menu-4" style="fill:none;stroke:#d2cfcf;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter" d="m 693,219 10,0"/>
+    <path id="Menu-arrow" style="fill:#d2cfcf;stroke:#000000;stroke-width:1.39999998;stroke-linecap:butt;stroke-linejoin:round" d="m 706,231 2,-3 4,4 2,-2 -4,-4 2,-2 -11,-5 5,12 z" sodipodi:nodetypes="cccccccc"/>
+  </g>
+<!--    Backspace     -->
+  <path id="S_kb2n" style="fill:none;stroke:#000000;stroke-width:2;marker-end:url(#TriangleOutM)" d="m 738,20 -20,0" sodipodi:nodetypes="cc"/>
+  
+<!-- ========     Alternates signs    ======== -->
+  <g inkscape:groupmode="layer" id="sublayer3a" inkscape:label="alternative signs" sodipodi:insensitive="true" style="display:inline">
+<!-- Tabulations  -->
+    <path id="S_kb3a-l1" style="fill:none;stroke:#000000;stroke-width:2;marker-end:url(#TriangleOutM)" d="M 34,66 14,66"/>
+    <path id="S_kb3a-l2" style="fill:none;stroke:#000000;stroke-width:2" d="m 10,60 0,12"/>
+    <path id="S_kb3a-r1" style="fill:none;stroke:#000000;stroke-width:2;marker-end:url(#TriangleOutM)" d="m 10,82 20,0"/>
+    <path id="S_kb3a-r2" style="fill:none;stroke:#000000;stroke-width:2" d="m 34,76 0,12"/>
+<!-- Shift  -->
+    <path id="S_kb5a" style="fill:none;stroke:#000000;stroke-width:2" d="m 18,166 -8,8 4,0 0,6 8,0 0,-6 4,0 z" inkscape:connector-curvature="0"/>
+    <use id="S_kb5n" xlink:href="#S_kb5a" transform="translate(660,0)" x="0" y="0" width="1" height="1"/>
+<!--      Enter  -->
+    <path id="S_kb4n" style="fill:none;stroke:#000000;stroke-width:2;marker-end:url(#TriangleOutM)" d="m 784,118 0,8 -18,0" inkscape:connector-curvature="0"/>
+<!-- Caps Lock  -->
+    <g id="S_kb4a">
+      <rect id="CapsLock-1" x="10" y="120" width="18" height="14" ry="1" rx="1" style="fill:none;stroke:#000000;stroke-width:1.60000002"/>
+      <path id="CapsLock-2" style="fill:none;stroke:#000000;stroke-width:1.39999998" d="m 12,120 v -3 a 7,6 0 0 1 14,0 v 3 m -12,0 v -3 a 5,4 0 0 1 10,0 v 3"/>
+      <ellipse id="CapsLock-3" cx="19" cy="125" rx="1" ry="2" sodipodi:cx="19" sodipodi:cy="125" sodipodi:rx="1" sodipodi:ry="2" style="fill:none;stroke:#000000;stroke-width:1.20000005"/>
+    </g>
+  </g>
+</g>
+<!-- ========     Inscriptions layer    ======== -->
+<g inkscape:groupmode="layer" id="en-us" inkscape:label="incriptions" sodipodi:insensitive="true" style="display:inline">
+  
+  <g id="T_stdletters" style="font-size:21px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none">
+
+    <text id="T_kb3e2" x="258" y="72" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">P</text>
+
+    <text id="T_kb3f2" x="312" y="72" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Y</text>
+
+    <text id="T_kb3g2" x="366" y="72" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">F</text>
+
+    <text id="T_kb3h2" x="420" y="72" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">G</text>
+
+    <text id="T_kb3i2" x="474" y="72" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">C</text>
+
+    <text id="T_kb3j2" x="528" y="72" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">R</text>
+
+    <text id="T_kb3k2" x="582" y="72" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">L</text>
+
+
+    <text id="T_kb4c2" x="112" y="122" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">A</text>
+
+    <text id="T_kb4d2" x="166" y="122" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">O</text>
+
+    <text id="T_kb4e2" x="220" y="122" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">E</text>
+
+    <text id="T_kb4f2" x="274" y="122" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">U</text>
+
+    <text id="T_kb4g2" x="328" y="122" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">I</text>
+
+    <text id="T_kb4h2" x="382" y="122" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">D</text>
+
+    <text id="T_kb4i2" x="436" y="122" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">H</text>
+
+    <text id="T_kb4j2" x="490" y="122" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">T</text>
+
+    <text id="T_kb4k2" x="544" y="122" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">N</text>
+
+    <text id="T_kb4l2" x="598" y="122" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">S</text>
+
+
+    <text id="T_kb5d2" x="186" y="172" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Q</text>
+
+    <text id="T_kb5e2" x="240" y="172" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">J</text>
+
+    <text id="T_kb5f2" x="294" y="172" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">K</text>
+
+    <text id="T_kb5g2" x="348" y="172" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">X</text>
+
+    <text id="T_kb5h2" x="402" y="172" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">B</text>
+
+    <text id="T_kb5i2" x="454" y="172" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">M</text>
+
+    <text id="T_kb5j2" x="508" y="172" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">W</text>
+
+    <text id="T_kb5k2" x="562" y="172" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">V</text>
+
+    <text id="T_kb5l2" x="616" y="172" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Z</text>
+
+  </g>
+
+  <g id="T_stdspecial" style="font-size:18px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none">
+
+    <text id="T_kb2a1" x="14" y="42" class="T_DeadKey" style="font-size:21px;font-weight:bold;writing-mode:lr-tb;fill:#ff0000;font-family:sans">`</text>
+
+    <text id="T_kb2b1" x="68" y="42" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">1</text>
+
+    <text id="T_kb2c1" x="122" y="42" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">2</text>
+
+    <text id="T_kb2d1" x="176" y="42" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">3</text>
+
+    <text id="T_kb2e1" x="230" y="42" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">4</text>
+
+    <text id="T_kb2f1" x="284" y="42" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">5</text>
+
+    <text id="T_kb2g1" x="338" y="42" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">6</text>
+
+    <text id="T_kb2h1" x="392" y="42" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">7</text>
+
+    <text id="T_kb2i1" x="446" y="42" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">8</text>
+
+    <text id="T_kb2j1" x="500" y="42" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">9</text>
+
+    <text id="T_kb2k1" x="554" y="42" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">0</text>
+
+    <text id="T_kb2l1" x="608" y="40" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">[</text>
+
+    <text id="T_kb2m1" x="662" y="40" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">]</text>
+
+
+    <text id="T_kb3b1" x="96" y="90" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">'</text>
+
+    <text id="T_kb3c1" x="150" y="90" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">,</text>
+
+    <text id="T_kb3d1" x="204" y="90" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">.</text>
+
+    <text id="T_kb3l1" x="636" y="90" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">/</text>
+
+    <text id="T_kb3m1" x="690" y="90" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">=</text>
+
+    <text id="T_kb3n1" x="744" y="90" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">\</text>
+
+
+    <text id="T_kb4m1" x="652" y="142" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">-</text>
+
+
+    <text id="T_kb5c1" x="132" y="190" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">;</text>
+
+
+<!--  Shift level -->
+
+    <text id="T_kb2a2" x="14" y="20" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">~</text>
+
+    <text id="T_kb2b2" x="68" y="20" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">!</text>
+ 
+    <text id="T_kb2c2" x="122" y="20" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">@</text>
+
+    <text id="T_kb2d2" x="176" y="20" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">#</text>
+
+    <text id="T_kb2e2" x="230" y="20" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">$</text>
+
+    <text id="T_kb2f2" x="284" y="20" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">%</text>
+
+    <text id="T_kb2g2" x="338" y="22" class="T_DeadKey" style="font-size:21px;font-weight:bold;writing-mode:lr-tb;fill:#ff0000;font-family:sans">^</text>
+
+    <text id="T_kb2h2" x="392" y="20" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">&amp;</text>
+
+    <text id="T_kb2i2" x="446" y="20" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">∗</text>
+
+    <text id="T_kb2j2" x="500" y="20" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">(</text>
+
+    <text id="T_kb2k2" x="554" y="20" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">)</text>
+
+    <text id="T_kb2l2" x="608" y="20" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">{</text>
+
+    <text id="T_kb2m2" x="662" y="20" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">}</text>
+
+
+    <text id="T_kb3b2" x="96" y="70" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">"</text>
+
+    <text id="T_kb3c2" x="150" y="70" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">&lt;</text>
+
+    <text id="T_kb3d2" x="204" y="70" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">&gt;</text>
+
+    <text id="T_kb3l2" x="636" y="70" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">?</text>
+
+    <text id="T_kb3m2" x="690" y="70" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">+</text>
+
+    <text id="T_kb3n2" x="744" y="68" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">|</text>
+
+
+    <text id="T_kb4m2" x="652" y="120" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">_</text>
+
+
+    <text id="T_kb5c2" x="132" y="170" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">:</text>
+
+  </g>
+
+  <g id="T_others" style="font-size:16px;text-align:start;text-anchor:start">
+    <text id="T_kb6a" x="10" y="230" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Ctrl</text>
+
+    <text id="T_kb6c" x="134" y="230" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Alt</text>
+
+    <text id="T_kb6k" x="564" y="230" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">AltGr</text>
+
+    <text id="T_kb6n" x="750" y="230" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Ctrl</text>
+
+  </g>
+<!-- ========     alternates inscriptions    ======== -->
+  <g inkscape:groupmode="layer" id="sublayer4a" inkscape:label="alternative inscriptions" style="display:inline">
+    <g id="T_alterninsc" style="font-size:14px;text-align:start;text-anchor:start;fill:#696969;fill-opacity:1;stroke:none">
+      <text id="T_kb2n" x="716" y="40" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Backspace</text>
+
+      <text id="T_kb3a" x="40" y="80" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Tab</text>
+
+      <text id="T_kb4n" x="700" y="130" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Enter</text>
+
+      <text id="T_kb4a1" x="40" y="120" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Caps</text>
+
+      <text id="T_kb4a2" x="40" y="136" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Lock</text>
+
+      <text id="T_kb5a" x="40" y="180" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Shift</text>
+
+      <text id="T_kb5m" x="700" y="180" style="font-weight:bold;writing-mode:lr-tb;font-family:'Nimbus Sans L, Arial, sans-serif'">Shift</text>
+
+    </g>
+  </g>
+</g>
+</svg>
