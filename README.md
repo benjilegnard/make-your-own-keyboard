@@ -6,28 +6,27 @@ Les slides sont disponibles ici : <https://benjilegnard.github.io/make-your-own-
 
 ### History
 
-- https://gallica.bnf.fr/ark:/12148/bpt6k6322183q/f43.image
-- Evolution of the typewriter https://www.loc.gov/item/17027959/ 
-- IBM https://www.ibm.com/ibm/history/exhibits/modelb/modelb_history.html
-- https://americanhistory.si.edu/collections/search/object/nmah_850123
-- https://en.wikipedia.org/wiki/Teleprinter
-- https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys
+- Télégraphe: https://gallica.bnf.fr/ark:/12148/bpt6k6322183q/f43.image
+- Evolution of the typewriter : https://www.loc.gov/item/17027959/ 
+- IBM : https://www.ibm.com/ibm/history/exhibits/modelb/modelb_history.html
+- Teletype / Téléscripteur : https://en.wikipedia.org/wiki/Teleprinter
+- HJKL : https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys
 
 ### Layout sizes
 
 - https://www.nytimes.com/wirecutter/reviews/our-favorite-mechanical-keyboards/
 - wasd https://www.vectorstock.com/royalty-free-vector/wasd-keyboard-buttons-icon-game-control-icon-vector-38066281 
-- google images...
+- google images search...
 
 ### Split keyboards
 
-- https://aposymbiont.github.io/split-keyboards/
-- https://github.com/diimdeep/awesome-split-keyboards#readme
+- A gallery of split models : https://aposymbiont.github.io/split-keyboards/
+- Another in "awesome" format : https://github.com/diimdeep/awesome-split-keyboards#readme
 
 ### Ergonomics
 
-- https://www.ameli.fr/assure/sante/themes/tms/comprendre-troubles-musculosquelettiques
-- 
+- Troubles Musculo-Squelettiques (FR) : https://www.ameli.fr/assure/sante/themes/tms/comprendre-troubles-musculosquelettiques
+- Typing and ergonomics (en) https://fitforworksg.com/typing-and-ergonomics-what-is-important/
 
 ### Keycaps
 
@@ -44,26 +43,32 @@ Les slides sont disponibles ici : <https://benjilegnard.github.io/make-your-own-
 
 - myself :shrug:
 
+### Some notable models and their github sources
+
+- Lily58 : https://github.com/kata0510/Lily58
+- Corne : https://github.com/foostan/crkbd
+- Sweep : https://github.com/davidphilipbarr/Sweep
+
 ### Online shops:
 
-- https://splitkb.com/
+- https://splitkb.com
 - https://shop.keyboard.io
 - https://keeb.io
 
 ### Vids
 
-- A guide to weirds keyboards https://www.youtube.com/watch?v=SkNGxM4LRKQ
-- How Keyboards & Mice Are Made - China Factory Tour https://www.youtube.com/watch?v=GdwkFLLdgYI
+- A guide to weirds keyboards : https://www.youtube.com/watch?v=SkNGxM4LRKQ
+- How Keyboards & Mice Are Made - China Factory Tour : https://www.youtube.com/watch?v=GdwkFLLdgYI
 
 ### Random other sources
 
-- https://deskthority.net/wiki/Main_Page
-- https://en.wikipedia.org/wiki/Tiling_window_manager
+- Deskthority.net : https://deskthority.net/wiki/Main_Page
+- Tiling window manager : https://en.wikipedia.org/wiki/Tiling_window_manager
+- A lot of useful resources : https://www.reddit.com/r/ErgoMechKeyboards/wiki/resources/
 
+### Communities
 
-### TODO
-
-- détailler un peu bépo et dvorak => expert gonna be experts
-- ne pas réduire les switches à bruyants ou pas => nerds gonna be nerds
-- lier mieux la construction aux "inventaires" de touches, switches, etc...
-- améliorer le storytelling sur les soudures
+- [/r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/) (closed, now on [lemmy](https://lemmy.world/c/ergomechkeyboards) )
+- [/r/olkb](https://www.reddit.com/r/olkb/)
+- Discord mechanical keyboards (FR) : https://discord.gg/V2Ns3gD 
+- Discord splitkb (EN) : https://splitkb.com/discord 
