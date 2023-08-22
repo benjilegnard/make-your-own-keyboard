@@ -2,6 +2,22 @@
 
 Les slides sont disponibles ici : <https://benjilegnard.github.io/make-your-own-keyboard/#/>
 
+## Abstract
+
+```
+Après avoir longtemps voulu un clavier "ergonomique", j'ai décidé de me lancer moi-même dans sa construction
+
+Ce que je ne savais pas, c'est que j'allais plonger dans le monde merveilleux des claviers mécaniques et du "Do It Yourself"
+
+On sait tous utiliser le clavier standard AZERTY dit 100%, mais est-ce que cette disposition est toujours pertinente en 2023 ?
+
+En quoi construire son propre clavier peut être intéressant pour les développeurs et développeuses que nous sommes ?
+
+Et comment peut-on être efficaces avec des claviers de seulement 34 touches ?
+
+Survolons ensemble les différentes options qui s'offrent à nous aujourd'hui.
+```
+
 ## Sources:
 
 ### History
@@ -54,6 +70,7 @@ Les slides sont disponibles ici : <https://benjilegnard.github.io/make-your-own-
 - https://splitkb.com
 - https://shop.keyboard.io
 - https://keeb.io
+- https://bastardkb.com
 
 ### Vids
 
