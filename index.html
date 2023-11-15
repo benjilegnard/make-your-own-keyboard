@@ -688,9 +688,9 @@
             <!-- TODO -->
           </section>
           <section>
-            <h3>Micro-controlleur</h3>
+            <h3>Microcontrôleur</h3>
             <img
-              src="/images/pro-micro.webp"
+              src="/images/elite-pi.webp"
               style="max-width: 80%"
               alt="photo d'un micro-controlleur"
             />
@@ -700,7 +700,7 @@
             </aside>
           </section>
           <section>
-            <h3>Ecrans OLED</h3>
+            <h3>écrans OLED</h3>
             <img
               src="/images/screen-on-corne.jpeg"
               style="max-width: 80%"
@@ -933,12 +933,34 @@
             />
           </section>
           <section>
+            <h3>KeyCodes</h3>
+            <ul>
+              <li><b>KC_A</b>: <kbd>a</kbd></li>
+              <li><b>KC_B</b>: <kbd>b</kbd></li>
+              <li><b>KC_LSHFT</b>: <kbd>Shift</kbd> gauche</li>
+              <li><b>KC_ESC</b>: <kbd>Echap</kbd></li>
+              <li>Et caetera...</li>
+            </ul>
+            <p class="source">
+              Source:
+              <a
+                href="https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md"
+                >https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md</a
+              >
+            </p>
+          </section>
+          <section>
             <h3>Layer functions</h3>
             <ul>
-              <li>MO(x): Momentary turn layer on</li>
-              <li>TG(x): Toggle layer on/off</li>
-              <li>DF(x): Sets default layer</li>
+              <li><b>MO(x)</b>: Momentary turn layer on</li>
+              <li><b>TG(x)</b>: Toggle layer on/off</li>
+              <li><b>DF(x)</b>: Sets default layer</li>
             </ul>
+            <aside class="notes" aria-label="notes">
+              <ul>
+                <li>Pratique si vous voulez tester plusieurs dispositions</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h3>Mod key combinations</h3>
@@ -961,12 +983,49 @@
               </tr>
             </table>
             <aside class="notes" aria-label="notes">
-              En paramètre entre les accolades on mets la touche voule pour
-              accéder au caractère qui correspond à shift + KC_X
+              <ul>
+                <li>
+                  En paramètre entre les accolades on mets la touche voule pour
+                  accéder au caractère qui correspond à shift + KC_X
+                </li>
+                <li>une pression = ctrl + x</li>
+              </ul>
             </aside>
           </section>
           <section>
-            <h3>Mod key combinations (advanced)</h3>
+            <h3>Mod key combinations (2)</h3>
+            <table>
+              <tr>
+                <td>RSA(KC_X)</td>
+                <td>
+                  (right <kbd>shift</kbd> + right <kbd>alt</kbd> + <kbd>x</kbd>)
+                </td>
+              </tr>
+              <tr class="fragment">
+                <td>MEH(KC_X)</td>
+                <td>
+                  (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>alt</kbd> +
+                  <kbd>x</kbd>)
+                </td>
+              </tr>
+              <tr class="fragment">
+                <td>HYPR(KC_X)</td>
+                <td>
+                  (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>alt</kbd> +
+                  <kbd>win</kbd> + <kbd>x</kbd>)
+                </td>
+              </tr>
+            </table>
+            <aside class="notes" aria-label="notes">
+              <ul>
+                <li></li>
+              </ul>
+              Source:
+              https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
+            </aside>
+          </section>
+          <section>
+            <h3>Tap dance</h3>
             <table>
               <tr>
                 <td>LShift_T(KC_X)</td>
@@ -1128,25 +1187,37 @@
           <section>
             <h3>Thanks, reddit</h3>
             <ul>
-              <li>/r/ErgoMechKeyboards/</li>
-              <li>/r/olkb/</li>
+              <li><a href="" target="_blank">/r/ErgoMechKeyboards/</a></li>
+              <li><a href="" target="_blank">/r/olkb/</a></li>
+              <li><a href="https://kbd.news" target="_blank">kbd.news</a></li>
             </ul>
             <aside class="notes" aria-label="notes">
               <ul>
                 <li>Communauté de malades</li>
+                <li>Discord</li>
               </ul>
             </aside>
           </section>
           <section>
             <h3>Shops</h3>
             <ul>
-              <li>splitkb.com</li>
-              <li>keeb.io</li>
-              <li>diykeyboard</li>
+              <li>
+                <a href="https://splitkb.com" target="_blank">splitkb.com</a>
+              </li>
+              <li><a href="https://keeb.io" target="_blank">keeb.io</a></li>
+              <li>
+                <a href="https://littlekeyboards.com" target="_blank"
+                  >littlekeyboards.com</a
+                >
+              </li>
+              <li class="fragment">Google est votre ami</li>
             </ul>
             <aside class="notes" aria-label="notes">
               <ul>
                 <li>Privilégier les boutiques européennes</li>
+                <li>
+                  Attention au frais de douane, notemment sur les batteries
+                </li>
               </ul>
             </aside>
           </section>
@@ -1154,8 +1225,14 @@
             <h3>Derniers conseils</h3>
             <ul>
               <li class="fragment">Apprenez les vim motions</li>
-              <li class="fragment">Mieux: utilisez vim</li>
               <li class="fragment">Débranchez vos souris</li>
+              <li class="fragment">
+                Apprenez les raccourcis de vos OS et apps
+              </li>
+              <li class="fragment">
+                Utilisez un gestionnaire de fenêtre en "carrelage"<br />(i3,
+                sway)
+              </li>
             </ul>
             <aside class="notes" aria-label="notes">
               <ul>
@@ -1168,25 +1245,11 @@
             </aside>
           </section>
           <section>
-            <h3>Derniers conseils (2)</h3>
-            <ul>
-              <li class="fragment">apprenez les raccourcis de vos apps</li>
-              <li class="fragment">
-                utilisez un gestionnaire de fenêtre "carrelage"<br />(i3, sway)
-              </li>
-              <li class="fragment">entraînement quotidien sur monkeytype</li>
-            </ul>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li></li>
-              </ul>
-            </aside>
-          </section>
-          <section>
             <h3>Conclusion</h3>
             <p>Faites le pour le comfort, pas pour la vitesse</p>
             <aside class="notes" aria-label="notes">
               <ul>
+                <li>Bizarre génie ? moi je trouve ca incroyable</li>
                 <li>
                   j'espère vous avoir montré les avantages et les possibilités
                   de faire son clavier ergonomique

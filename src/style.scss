@@ -41,21 +41,24 @@ $heading4Size: 1em;
 @import "reveal.js/css/theme/template/theme";
 // ---------------------------------------------
 kbd {
-  border: 2px solid lightgray;
+  border: 2px solid #c4c4b0;
   border-radius: 8px;
   padding: 0 4px;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.1),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.5);
+  background-color: #fbfbf0;
 }
 
-.source{
-  font-size: 1.5rem ;
+.source {
+  font-size: 1.5rem;
 }
 
-.qr-codes{
+.qr-codes {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-.qr-codes a{
+.qr-codes a {
   display: block;
 }
