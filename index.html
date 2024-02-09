@@ -487,13 +487,35 @@
           <section>
             <h3>Staggered</h3>
             <p>Oui, mais verticalement</p>
-            <img src="/images/keyboard-lily58.png" alt="" />
+            <img
+              src="/images/keyboard-lily58.png"
+              style="max-width: 80%"
+              alt=""
+            />
             <aside class="notes" aria-label="notes">
               <ul>
                 <li>Décalage vertical</li>
                 <li>Grappe de pouces</li>
               </ul>
             </aside>
+          </section>
+          <section>
+            <h3>Tenting</h3>
+            <p>Inclinaison</p>
+            <img
+              src="/images/tripod-tilt-for-split-keyboard.jpg"
+              style="max-width: 80%"
+              alt=""
+            />
+            <p class="source">
+              Source:
+              <a
+                target="_blank"
+                href="https://falbatech.click/products/Magsafe-Tripod-tilt-tent-for-keyboards-p613836666"
+              >
+                falba.tech
+              </a>
+            </p>
           </section>
           <section>
             <h3>Pourquoi découper un clavier ?</h3>
@@ -919,6 +941,10 @@
           </section>
           <section>
             <h3>Les keymaps</h3>
+            <ul>
+              <li>keymap.json</li>
+              <li>rules.mk</li>
+            </ul>
           </section>
           <section
             data-background-iframe="https://config.qmk.fm/#/splitkb/aurora/lily58/rev1/LAYOUT"
@@ -931,6 +957,11 @@
               src="/images/keymap-json-format.png"
               alt="Capture d'écran d'un fichier JSON contenant les codes de touches"
             />
+            <aside class="notes">
+              <ul>
+                <li>Possibilté de convertir en C, mais export plus possible</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h3>KeyCodes</h3>
@@ -1018,14 +1049,16 @@
             </table>
             <aside class="notes" aria-label="notes">
               <ul>
-                <li></li>
+                <li>
+                  Permets de faire des combinaisons de touches modificatrices
+                </li>
               </ul>
               Source:
               https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
             </aside>
           </section>
           <section>
-            <h3>Tap dance</h3>
+            <h3>Modifier on hold</h3>
             <table>
               <tr>
                 <td>LShift_T(KC_X)</td>
@@ -1050,10 +1083,25 @@
               </ul>
             </aside>
           </section>
+          <section>
+            <h3>Tap Dance</h3>
+
+            <img
+              src="/images/finger-tap-dance.gif"
+              alt="Doigts tapotant sur une table"
+            />
+            <aside class="notes">
+              <ul>
+                <li>1 tap = 1 caractères</li>
+                <li>2 taps = autre caractères</li>
+                <li>3 taps, etc</li>
+              </ul>
+            </aside>
+          </section>
         </section>
         <section>
           <section>
-            <h2>Mes futurs builds</h2>
+            <h2>Mes <strike>futurs</strike> builds</h2>
             <p>Et surtout, tout est open-source !</p>
           </section>
           <section>
@@ -1066,6 +1114,12 @@
             </p>
           </section>
           <section>
+            <img
+              src="/images/benjilegnard-lily58.jpeg"
+              style="max-width: 80%"
+            />
+          </section>
+          <section>
             <h3>Corne</h3>
             <img src="/images/corne-layer-0.png" />
             <p>
@@ -1073,6 +1127,15 @@
                 >https://github.com/foostan/crkbd</a
               >
             </p>
+          </section>
+          <section>
+            <video
+              data-autoplay
+              autoplay
+              loop
+              muted
+              src="/images/benjilegnard-corne.mp4"
+            ></video>
           </section>
           <section>
             <h3>Ferris</h3>
@@ -1085,6 +1148,71 @@
                 >https://github.com/davidphilipbarr/Sweep</a
               >
             </p>
+          </section>
+          <section>
+            <img src="/images/benjilegnard-sweep.jpeg" style="max-width: 80%" />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>34 touches?</h2>
+          </section>
+          <section>
+            <h4>Couche 0</h4>
+            <img
+              src="/images/sweep-0.png"
+              alt="Carte des touches d'un clavier Ferris sweep"
+            />
+          </section>
+          <section>
+            <h4>Couche 1/D : majeur gauche</h4>
+            <img
+              src="/images/sweep-1.png"
+              alt="Carte des touches d'un clavier Ferris sweep"
+            />
+          </section>
+          <section>
+            <h4>Couche 2/K : majeur droit</h4>
+            <img
+              src="/images/sweep-2.png"
+              alt="Carte des touches d'un clavier Ferris sweep"
+            />
+          </section>
+          <section>
+            <h4>Couche 3/F : index gauche</h4>
+            <img
+              src="/images/sweep-3.png"
+              alt="Carte des touches d'un clavier Ferris sweep"
+            />
+          </section>
+          <section>
+            <h4>Couche 4/J : index droit</h4>
+            <img
+              src="/images/sweep-4.png"
+              alt="Carte des touches d'un clavier Ferris sweep"
+            />
+          </section>
+          <section>
+            <h4>Couche 5/F : annulaire gauche</h4>
+            <img
+              src="/images/sweep-5.png"
+              alt="Carte des touches d'un clavier Ferris sweep"
+            />
+          </section>
+          <section>
+            <h4>Couche 6/L : annulaire droit</h4>
+            <img
+              src="/images/sweep-6.png"
+              alt="Carte des touches d'un clavier Ferris sweep"
+            />
+          </section>
+          <section>
+            <h4>Couche 7 : pouce droit</h4>
+            <img
+              src="/images/sweep-7.png"
+              alt="Carte des touches d'un clavier Ferris sweep"
+            />
+            <aside class="notes">la couche vim</aside>
           </section>
         </section>
         <section>
@@ -1152,6 +1280,13 @@
             </aside>
           </section>
           <section>
+            <h3>Dactylo / touch-typing</h3>
+            <ul>
+              <li><a href="https://www.typingclub.com/">typingclub.com</a></li>
+              <li><a href="https://wwww.typing.guru">typing.guru</a></li>
+            </ul>
+          </section>
+          <section>
             <h3>S'entraîner: monkeytype</h3>
             <img
               src="/images/monkeytype-training.jpeg"
@@ -1176,7 +1311,10 @@
               alt="photo d'un portable avec une feuille d'aide couvrant le clavier"
             />
             <aside class="notes" aria-label="notes">
-              Avantage : force à utiliser le clavier, pas de trackpad
+              <ul>
+                <li>Avantage : force à utiliser le clavier, pas de trackpad</li>
+                <li>Meilleur moyen d'apprendre</li>
+              </ul>
             </aside>
           </section>
         </section>
@@ -1194,7 +1332,9 @@
             <aside class="notes" aria-label="notes">
               <ul>
                 <li>Communauté de malades</li>
-                <li>Discord</li>
+                <li>
+                  Discords existent mais valent pas le coup d'être mentionnés
+                </li>
               </ul>
             </aside>
           </section>
