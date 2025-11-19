@@ -1,1444 +1,1213 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DIY Keyboard</title>
-  </head>
 
-  <body>
-    <div class="reveal">
-      <div class="slides">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIY Keyboard</title>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
         <section>
-          <section>
-            <h1 style="font-size: 1.5em">
-              Construire soi-même son clavier mécanique:<br />idée bizarre ou
-              idée de génie?
-            </h1>
-            <aside class="notes" aria-label="notes">
-              Ice breaker, est ce que des gens ont déjà eu mal aux mains, aux
-              poignets, après avoir utilisé un clavier
-            </aside>
-          </section>
-          <section>
-            <h3>Qui suis-je ?</h3>
+          <h1 style="font-size: 1.5em">
+            Construire soi-même son clavier mécanique:<br />idée bizarre ou
+            idée de génie?
+          </h1>
+          <aside class="notes" aria-label="notes">
+            Ice breaker, est ce que des gens ont déjà eu mal aux mains, aux
+            poignets, après avoir utilisé un clavier
+          </aside>
+        </section>
+        <section>
+          <h3>Qui suis-je ?</h3>
+          <ul>
+            <li>Benjamin Legrand</li>
+            <li>Tech Lead @ onepoint</li>
+            <li>
+              <strong>@benjilegnard</strong> sur Twitter, Github, Twitch...
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Story time</h2>
+          <img src="/images/flims/very-bad-trip.jpg" style="max-width: 40%" alt="Poster du film very bad trip" />
+          <aside class="notes" aria-label="notes">
             <ul>
-              <li>Benjamin Legrand</li>
-              <li>Tech Lead @ onepoint</li>
+              <li>Octobre Novembre 2021 cassé le bras</li>
+              <li>deux mois à récupérer</li>
+              <li>Pas de souris, bouger le bras = douleur</li>
+              <li>début de vim, apprentissage des raccourcis clavier</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Quote</h3>
+          <cite>Being valid is temporary</cite>
+          <p class="source">Source: a11y experts wisdom from the internet</p>
+          <aside class="notes" aria-label="notes">
+            Morale de l'histoire, l'alcool c'est mal. Valide dans le sens ne
+            pas être handicapé, ne pas avoir mal
+          </aside>
+        </section>
+        <section>
+          <h3>HYPE</h3>
+          <img src="/images/keyboard-moonlander.png" style="max-width: 70%"
+            alt="Photo d'un clavier ergonomique en deux parties" />
+          <p>Le moonlander</p>
+          <aside class="notes" aria-label="notes">
+            Courant 2022 je vois des "influencers" devs vanter ce clavier.
+            C'est pas mal mais il coûte un bras.
+          </aside>
+        </section>
+        <section>
+          <h3>Dans ce talk</h3>
+          <ul>
+            <li class="fragment">C'est quoi un clavier?</li>
+            <li class="fragment">les Split Keyboards</li>
+            <li class="fragment">Programmer son clavier</li>
+            <li class="fragment">REX de mes propres build</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Down the rabbit hole</h3>
+          <img src="/images/flims/alice-down-the-rabbit-hole.webp"
+            alt="Gif animé d'alice au pays des merveilles qui tombe dans le terrier du lapin blanc" />
+          <aside class="notes" aria-label="notes">
+            Suivez moi dans le terrier du lapin blanc, Dans le monde
+            merveilleux des claviers ergonomiques
+          </aside>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Un peu d'histoire</h2>
+          <img src="/images/flims/les-trucs-pointus-la.webp"
+            alt="extrait vidéos du film Astérix et Obélix mission cléopatre montrant Alain chabat en César faisant le signe du triangle" />
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>on a un héritage sur les claviers</li>
+              <li>et y'a pas eu de révolution énorme</li>
+              <li>Presque deux siècles en 3 minutes</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Télégraphe</h3>
+          <img src="/images/keyboard-1860-telegraph.jpg"
+            alt="Photo du télégraphe de hughes, présentant un clavier comme un piano, avec des touches noires et blanches, mais avec des lettres dessus" />
+          <p class="source">
+            Source:
+            <a target="_blank"
+              href="https://en.wikipedia.org/wiki/David_Edward_Hughes">https://en.wikipedia.org/wiki/David_Edward_Hughes</a>
+          </p>
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>1855</li>
+              <li>télégraphe morse de lucky lucke</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Machine à écrire (1)</h3>
+          <img src="/images/keyboards-1868-patent.jpg" alt="Photo du premier brevet déposé pour une machine à écrire" />
+          <p class="source">
+            Source:
+            <a target="_blank"
+              href="https://americanhistory.si.edu/collections/search/object/nmah_850123 ">https://americanhistory.si.edu/collections/search/object/nmah_850123
+            </a>
+          </p>
+
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>image du brevet de 1868</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Machine à écrire (2)</h3>
+          <img src="/images/typewriter-densmore.png" alt="dessin d'une machine à écrire densmore"
+            style="max-width: 60%" />
+          <aside class="notes" aria-label="notes">
+            Voilà plutot ce qu'on a en tete quand on parle de machine à écrire
+          </aside>
+        </section>
+        <section>
+          <h3>Machine à écrire (3)</h3>
+          <img src="/images/typewriter-underwood.png" alt="dessin d'une machine à écrire underwood"
+            style="max-width: 60%" />
+          <aside class="notes" aria-label="notes">
+            Anecdote des bras qui se touchent, ABCD initialement, création du
+            QWERTY
+          </aside>
+        </section>
+        <section>
+          <h3>Machine à écrire (4)</h3>
+          <img src="/images/typewriter-double-shift.png" alt="schema des touches d'une machine à écrire" />
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Shift: décalage</li>
               <li>
-                <strong>@benjilegnard</strong> sur Twitter, Github, Twitch...
+                On avait déjà les principes d' une touche = plusieurs
+                caractères possibles
               </li>
             </ul>
-          </section>
-          <section>
-            <h2>Story time</h2>
-            <img
-              src="/images/flims/very-bad-trip.jpg"
-              style="max-width: 40%"
-              alt="Poster du film very bad trip"
-            />
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Octobre Novembre 2021 cassé le bras</li>
-                <li>deux mois à récupérer</li>
-                <li>Pas de souris, bouger le bras = douleur</li>
-                <li>début de vim, apprentissage des raccourcis clavier</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Quote</h3>
-            <cite>Being valid is temporary</cite>
-            <p class="source">Source: a11y experts wisdom from the internet</p>
-            <aside class="notes" aria-label="notes">
-              Morale de l'histoire, l'alcool c'est mal. Valide dans le sens ne
-              pas être handicapé, ne pas avoir mal
-            </aside>
-          </section>
-          <section>
-            <h3>HYPE</h3>
-            <img
-              src="/images/keyboard-moonlander.png"
-              style="max-width: 70%"
-              alt="Photo d'un clavier ergonomique en deux parties"
-            />
-            <p>Le moonlander</p>
-            <aside class="notes" aria-label="notes">
-              Courant 2022 je vois des "influencers" devs vanter ce clavier.
-              C'est pas mal mais il coûte un bras.
-            </aside>
-          </section>
-          <section>
-            <h3>Dans ce talk</h3>
+          </aside>
+        </section>
+        <section>
+          <h3>Téléscripteur</h3>
+          <table>
+            <tr>
+              <td>
+                <img src="/images/keyboards-teletype.jpeg" alt="photo en couleur d'un téléscripteur"
+                  style="max-width: 80%" />
+              </td>
+              <td>
+                <ul>
+                  <li class="fragment">télétype</li>
+                  <li class="fragment">ou... TTY</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <aside class="notes" aria-label="notes">
             <ul>
-              <li class="fragment">C'est quoi un clavier?</li>
-              <li class="fragment">les Split Keyboards</li>
-              <li class="fragment">Programmer son clavier</li>
-              <li class="fragment">REX de mes propres build</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Down the rabbit hole</h3>
-            <img
-              src="/images/flims/alice-down-the-rabbit-hole.webp"
-              alt="Gif animé d'alice au pays des merveilles qui tombe dans le terrier du lapin blanc"
-            />
-            <aside class="notes" aria-label="notes">
-              Suivez moi dans le terrier du lapin blanc, Dans le monde
-              merveilleux des claviers ergonomiques
-            </aside>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Un peu d'histoire</h2>
-            <img
-              src="/images/flims/les-trucs-pointus-la.webp"
-              alt="extrait vidéos du film Astérix et Obélix mission cléopatre montrant Alain chabat en César faisant le signe du triangle"
-            />
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>on a un héritage sur les claviers</li>
-                <li>et y'a pas eu de révolution énorme</li>
-                <li>Presque deux siècles en 3 minutes</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Télégraphe</h3>
-            <img
-              src="/images/keyboard-1860-telegraph.jpg"
-              alt="Photo du télégraphe de hughes, présentant un clavier comme un piano, avec des touches noires et blanches, mais avec des lettres dessus"
-            />
-            <p class="source">
-              Source:
-              <a
-                target="_blank"
-                href="https://en.wikipedia.org/wiki/David_Edward_Hughes"
-                >https://en.wikipedia.org/wiki/David_Edward_Hughes</a
-              >
-            </p>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>1855</li>
-                <li>télégraphe morse de lucky lucke</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Machine à écrire (1)</h3>
-            <img
-              src="/images/keyboards-1868-patent.jpg"
-              alt="Photo du premier brevet déposé pour une machine à écrire"
-            />
-            <p class="source">
-              Source:
-              <a
-                target="_blank"
-                href="https://americanhistory.si.edu/collections/search/object/nmah_850123 "
-                >https://americanhistory.si.edu/collections/search/object/nmah_850123
-              </a>
-            </p>
-
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>image du brevet de 1868</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Machine à écrire (2)</h3>
-            <img
-              src="/images/typewriter-densmore.png"
-              alt="dessin d'une machine à écrire densmore"
-              style="max-width: 60%"
-            />
-            <aside class="notes" aria-label="notes">
-              Voilà plutot ce qu'on a en tete quand on parle de machine à écrire
-            </aside>
-          </section>
-          <section>
-            <h3>Machine à écrire (3)</h3>
-            <img
-              src="/images/typewriter-underwood.png"
-              alt="dessin d'une machine à écrire underwood"
-              style="max-width: 60%"
-            />
-            <aside class="notes" aria-label="notes">
-              Anecdote des bras qui se touchent, ABCD initialement, création du
-              QWERTY
-            </aside>
-          </section>
-          <section>
-            <h3>Machine à écrire (4)</h3>
-            <img
-              src="/images/typewriter-double-shift.png"
-              alt="schema des touches d'une machine à écrire"
-            />
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Shift: décalage</li>
-                <li>
-                  On avait déjà les principes d' une touche = plusieurs
-                  caractères possibles
-                </li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Téléscripteur</h3>
-            <table>
-              <tr>
-                <td>
-                  <img
-                    src="/images/keyboards-teletype.jpeg"
-                    alt="photo en couleur d'un téléscripteur"
-                    style="max-width: 80%"
-                  />
-                </td>
-                <td>
-                  <ul>
-                    <li class="fragment">télétype</li>
-                    <li class="fragment">ou... TTY</li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Début des gros ordinateurs de la taille d'une pièce</li>
-                <li>
-                  double feedback, sur papier, et envoyé en message électrique
-                </li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>70's / 80's</h3>
-            <img src="/images/lsi-adm-3a.jpg" />
-            <p class="source">
-              Source :
-              <a
-                target="_blank"
-                href="https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys"
-                >https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys</a
-              >
-            </p>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Micro-ordinateur, Naissance d'apple</li>
-                <li>
-                  Les ordinateurs deviennent assez petits pour rentrer dans les
-                  foyers
-                </li>
-              </ul>
-            </aside>
-          </section>
-
-          <section>
-            <h3>HJKL</h3>
-            <img src="/images/adm-3a-hjkl-keyboard.jpg" />
-            <p class="source">
-              Source :
-              <a
-                target="_blank"
-                href="https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys"
-                >https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys</a
-              >
-            </p>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>
-                  Premier clavier à avoir les touches fléchées sur la home row
-                </li>
-              </ul>
-            </aside>
-          </section>
-
-          <section>
-            <h3>90's / 00's globalisation</h3>
-            <img src="/images/inside-a-membrane-keyboard.png" />
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>On a tous eu ce genre de clavier chez nous</li>
-                <li>
-                  Pas cher à construire en masse, mais irréparable, monobloc
-                </li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Retour aux sources ?</h3>
-            <img src="/images/keyboards-gaming.jpg" />
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>
-                  fin d'années 2000 retour en foce de ce qu'on appelle clavier
-                  mécanique
-                </li>
-                <li>à destination des gameurs</li>
-                <li>Précision</li>
-              </ul>
-            </aside>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>So many keys...</h2>
-            <img
-              src="/images/flims/dont-need-roads.webp"
-              alt="capture du film 'Retour vers le futur' avec le texte 'routes ? là ou on va on a pas besoin, de routes'"
-            />
-            <p>Là où on va on a pas besoin, de touches</p>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Voilà pour un bref historique</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>100% layout</h3>
-            <img src="/images/keyboard-layouts-100.png" />
-          </section>
-          <section>
-            <h3>80% layout</h3>
-            <img src="/images/keyboard-layouts-80-pct.png" />
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Tenkeyless, plus de numpad</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>60% layout</h3>
-            <img src="/images/keyboard-layouts-60-pct.jpg" />
-          </section>
-          <section>
-            <h3>40% layout</h3>
-            <img src="/images/keyboard-layouts-40-pct.jpg" />
-          </section>
-          <section>
-            <h3>and less</h3>
-            <img src="/images/keyboard-lily58.png" style="max-width: 80%" />
-            <p class="source">
-              Source:
-              <a target="_blank" href="https://github.com/kata0510/Lily58"
-                >https://github.com/kata0510/Lily58</a
-              >
-            </p>
-          </section>
-          <section>
-            <h3>and even less</h3>
-            <img
-              alt="photo du clavier ergonomique en deux partie : le 'corne'"
-              src="/images/josef-corne.png"
-              style="max-width: 60%"
-            />
-            <p class="source">
-              Source:
-              <a
-                target="_blank"
-                href="https://josef-adamcik.cz/electronics/corne-keyboard-build-log.html"
-              >
-                https://josef-adamcik.cz/electronics/corne-keyboard-build-log.html</a
-              >
-            </p>
-          </section>
-          <section>
-            <h3>And what even is that ?</h3>
-            <img src="/images/keyboards-fifi.jpg" />
-            <p class="source">
-              Source:
-              <a
-                target="_blank"
-                href="https://www.reddit.com/r/ErgoMechKeyboards/comments/mqw13x/my_new_fifi_split_keyboard_using_the_miryoku/"
-              >
-                https://www.reddit.com/r/ErgoMechKeyboards/comments/mqw13x/my_new_fifi_split_keyboard_using_the_miryoku/</a
-              >
-            </p>
-            <aside class="notes" aria-label="notes">Clavier FIFI</aside>
-          </section>
-          <section>
-            <h3>And that ?</h3>
-            <img
-              src="/images/dactyl-manuform-diykeyboard.com.jpg"
-              style="max-width: 70%"
-            />
-            <p>Dactyl manuform</p>
-            <aside class="notes" aria-label="notes">
-              Un clavier c'est pas obgligé d'etre plat
-            </aside>
-          </section>
-          <section>
-            <h3>Do we need something else ?</h3>
-            <img
-              src="/images/the-key-launch-opt1.png"
-              alt="photo d'un clavier créé par stackoverflow pour un premier avril, il y a trois touches, ctrl, C et V"
-            />
-            <aside class="notes" aria-label="notes">
-              C'est une blague, poisson d'avril de stack overflow
-            </aside>
-          </section>
-          <section
-            data-background-iframe="https://aposymbiont.github.io/split-keyboards/"
-            data-background-interactive
-            data-preload
-          >
-            <h3
-              style="
-                text-shadow:
-                  4px 4px 0 white,
-                  -4px -4px 0 white,
-                  -4px 4px 0 white,
-                  4px -4px 0 white;
-              "
-            >
-              And the list goes on...
-            </h3>
-          </section>
-          <section>
-            <h3>Split keyboards</h3>
-
-            <p class="source">
-              Source du slide précédent:
-              <a
-                target="_blank"
-                href="https://aposymbiont.github.io/split-keyboards/"
-                >https://aposymbiont.github.io/split-keyboards/</a
-              >
-            </p>
-            <aside class="notes" aria-label="notes">
-              On a vu un peu tout les modèles de clavier à disposition. Pourquoi
-              les splits keyboard c'est bien? pour comprendre ca il faut qu'on
-              parle d'ergonomie
-            </aside>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Ergonomie</h2>
-            <p>
-              Adaptation d'un environnement de travail (outils, matériel,
-              organisation…) aux besoins de l'utilisateur.
-            </p>
-          </section>
-          <section>
-            <h3>Ergonomie (2)</h3>
-            <table>
-              <tr>
-                <td>
-                  <img src="/images/keyboards-ergonomics.jpg" />
-                </td>
-                <td>
-                  <ul>
-                    <li class="fragment">Bon fauteuil</li>
-                    <li class="fragment">Écran à hauteur des yeux</li>
-                    <li class="fragment">Conseils sur le clavier?</li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-            <aside class="notes" aria-label="notes"></aside>
-          </section>
-          <section>
-            <h3>TMS</h3>
-            <ul>
-              <li>Troubles Musculo-squelettiques</li>
-              <li class="fragment">
-                En augmentation constante, 60% depuis 2003
-              </li>
-              <li class="fragment">
-                Touche (entre autres) les poignets, les doigts
-              </li>
-              <li class="fragment">
-                causé par des contraintes sur le corps, mouvements non-naturel
+              <li>Début des gros ordinateurs de la taille d'une pièce</li>
+              <li>
+                double feedback, sur papier, et envoyé en message électrique
               </li>
             </ul>
-            <p class="source fragment">
-              Source:
-              <a
-                target="_blank"
-                href="https://www.ameli.fr/assure/sante/themes/tms/comprendre-troubles-musculosquelettiques"
-                >https://www.ameli.fr/assure/sante/themes/tms/comprendre-troubles-musculosquelettiques</a
-              >
-            </p>
-            <aside class="notes" aria-label="notes"></aside>
-          </section>
-          <section>
-            <h3>Staggered ?</h3>
-            <img
-              src="/images/staggered-vs-ortholinear.png"
-              style="max-width: 80%"
-              alt="Photo d'un clavier en disposition de touches 'décalées' comparé à un clavier ortholinéaire ou toutes les touches sont sur une grille et de la mème taille"
-            />
-          </section>
-          <section>
-            <h3>Ortholinear ?</h3>
-            <img
-              src="/images/ortholinear-planck.webp"
-              style="max-width: 80%"
-              alt="photo d'un calvier ortholinéaire, le planck"
-            />
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Le planck</li>
-                <li>Principe: aligné verticalement ET horizontalement</li>
-                <li>Touches de la même taille (1U)</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Staggered</h3>
-            <p>Oui, mais verticalement</p>
-            <img
-              src="/images/keyboard-lily58.png"
-              style="max-width: 80%"
-              alt=""
-            />
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Décalage vertical</li>
-                <li>Grappe de pouces</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Tenting</h3>
-            <p>Inclinaison</p>
-            <img
-              src="/images/tripod-tilt-for-split-keyboard.jpg"
-              style="max-width: 80%"
-              alt=""
-            />
-            <p class="source">
-              Source:
-              <a
-                target="_blank"
-                href="https://falbatech.click/products/Magsafe-Tripod-tilt-tent-for-keyboards-p613836666"
-              >
-                falba.tech
-              </a>
-            </p>
-          </section>
-          <section>
-            <h3>Pourquoi découper un clavier ?</h3>
-            <img
-              src="/images/flims/cite-de-la-peur-ca-va-couper.webp"
-              alt="Gif animé extrait du film 'la cité de la peur' lorsqu'un projectionniste se fait attaquer à la faucille, et il dit 'attention chérie, ca va trancher'"
-            />
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Clavier coupé / scindé / tranché?</li>
-                <li>Position relachée des épaules</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Pas bien</h3>
-            <img
-              src="/images/wrists-posture-fitforworksg.webp"
-              alt="Illustration des mains sur un clavier, quand les poignets sont tordus, c'est pas bon"
-            />
-            <p class="source">
-              Source:
-              <a
-                target="_blank"
-                href="https://fitforworksg.com/typing-and-ergonomics-what-is-important/"
-              >
-                https://fitforworksg.com/typing-and-ergonomics-what-is-important/</a
-              >
-            </p>
-          </section>
-          <section>
-            <h3>Bien</h3>
-            <img
-              src="/images/good-posture-fitforworksg.webp"
-              style="max-width: 70%"
-              alt="Illustration des mains sur un clavier, quand les poignets sont droits, c'est une bonne posture"
-            />
-            <p class="source">
-              Source:
-              <a
-                target="_blank"
-                href="https://fitforworksg.com/typing-and-ergonomics-what-is-important/"
-              >
-                https://fitforworksg.com/typing-and-ergonomics-what-is-important/</a
-              >
-            </p>
-            <aside class="notes" aria-label="notes">
-              Posture compliquée à tenir, bras sur le torse Tension sur les
-              épaules
-            </aside>
-          </section>
-          <section>
-            <h3>La home row ?</h3>
-            <img
-              src="/images/home-keys-position.png"
-              alt="schéma montrant les touches d'un clavier avec la silhouette des mains positionnées sur la rangée principale"
-            />
-
-            <aside class="notes" aria-label="notes">
-              Principe en usage efficace du clavier : Vos doigts au repos sont
-              sur cette ligne. Pour ca qu'il y a des petits bumps sur F et J,
-              généralement c'est là qu'on mets ses index Plus les lettres
-              usuelles sont proche de la home row moins on fait d'effort pour
-              l'atteindre
-            </aside>
-          </section>
-          <section>
-            <h3>DVORAK</h3>
-            <img src="/images/dvorak.svg" />
-            <aside class="notes" aria-label="notes">
-              Touche usuelle de la home row. Pas vraiment de gain énorme.
-            </aside>
-          </section>
-          <section>
-            <h3>BÉPO</h3>
-            <img src="/images/bépo_simplifié.png" />
-
-            <aside class="notes" aria-label="notes">
-              Variante de dvorak adapté. Mon conseil: garder les lettres en
-              azerty, on y est habituées,
-            </aside>
-          </section>
-          <section>
-            <h3>AZERTY, pour du dev ?</h3>
-            <img src="/images/azerty.png" />
-            <p class="fragment">🤮</p>
-          </section>
-          <section>
-            <h3>Les couches ?</h3>
-            <ul>
-              <li class="fragment">Vous les utilisez déjà</li>
-              <li class="fragment">Shift, Alt, Alt+gr, fn</li>
-              <li class="fragment">Raise / Lower</li>
-            </ul>
-          </section>
-          <section>
-            <img src="/images/corne-layer-0.png" />
-          </section>
-          <section>
-            <img src="/images/corne-layer-1.png" />
-          </section>
-          <section>
-            <img src="/images/corne-layer-2.png" />
-          </section>
-          <section>
-            <img src="/images/corne-layer-3.png" />
-          </section>
-          <section>
-            <h3>
-              Avantages des couches<br />
-              pour le développement
-            </h3>
-            <ul>
-              <li class="fragment">Peu de mouvement des doigts</li>
-              <li class="fragment">Accès facilité aux caractères spéciaux</li>
-              <li class="fragment">Personnalisation</li>
-            </ul>
-          </section>
-          <section>
-            <h3>LISP</h3>
-            <img src="/images/lisp-joke.png" />
-            <aside class="notes">
-              C'est une blague évidemment.<br />
-              Bon maintenant je suis convaincu, j'en veux un. Qu'est ce qu'il
-              faut encore que je voie
-            </aside>
-          </section>
+          </aside>
         </section>
         <section>
-          <section>
-            <h2>Dis moi papa, comment ça marche, un clavier ?</h2>
-            <img src="/images/flims/welcome-to-the-matrix.webp" />
-          </section>
-          <section>
-            <h3>Bienvenue dans la matrice</h3>
-            <img
-              src="/images/9x9-keyboard-matrix.jpg"
-              style="max-width: 40%"
-              alt="schéma simplifié de l'électronique d'un clavier une matrice avec colonnes et lignes, et un interrupteur et diodes à chaque croisement"
-            />
-
-            <aside class="notes" aria-label="notes">
-              Plein d'interrupteurs. Electroniquement c'est pas hyper compliqué,
-              soit le courant passe, soit il passe pas
-            </aside>
-          </section>
-          <section>
-            <h3>Schéma complet</h3>
-            <img
-              src="/images/corne-schema.png"
-              style="max-width: 80%"
-              alt="schéma électronique d'une partie d'un clavier corne"
-            />
-            <!-- TODO -->
-          </section>
-          <section>
-            <h3>Composants principaux</h3>
-            <img
-              src="/images/iris-pe-case-build_480x480.webp"
-              alt="schema d'assemblage d'un clavier iris"
-            />
-            <p class="source">
-              Source:
-              <a
-                target="_blank"
-                href="https://keeb.io/collections/iris-split-ergonomic-keyboard"
-                >keeb.io</a
-              >
-            </p>
-          </section>
-          <section>
-            <h2>Les circuits imprimés</h2>
-            <img
-              src="/images/kicad-corne-pcb.png"
-              style="max-width: 80%"
-              alt="vue d'un logiciel de conception"
-            />
-
-            <aside class="notes" aria-label="notes">
-              - circuit notable car meme PCB pour la partie gauche et droite
-              <br />
-              - KICAD: logiciel open source de CAD
-            </aside>
-          </section>
-          <section>
-            <h3>qu'est ce qu'on y connecte ?</h3>
-            <img
-              src="/images/kirya-kit.webp"
-              style="max-width: 80%"
-              alt="photo d'un kit de composants électroniques pour construire son propre clavier ergonomique, il s'agit du modèle kyria de splitkb"
-            />
-            <!-- TODO -->
-          </section>
-          <section>
-            <h3>Microcontrôleur</h3>
-            <img
-              src="/images/elite-pi.webp"
-              style="max-width: 80%"
-              alt="photo d'un micro-controlleur"
-            />
-            <aside class="notes" aria-label="notes">
-              à noter que si vous voulez faire du bluetooth / sans fil, celui là
-              conviendra pas
-            </aside>
-          </section>
-          <section>
-            <h3>écrans OLED</h3>
-            <img
-              src="/images/screen-on-corne.jpeg"
-              style="max-width: 80%"
-              alt="photo d'un écran OLED sur un clavier ergonomique en deux parties"
-            />
-            <aside class="notes" aria-label="notes">
-              écrans pour afficher des infos sur le clavier
-            </aside>
-          </section>
-          <section>
-            <h3>Lumière !</h3>
-            <img
-              src="/images/damn-leds.webp"
-              style="max-width: 80%"
-              alt="Photo de composants électronique, des diodes électro-luminescentes en gros plan"
-            />
-            <aside class="notes" aria-label="notes">
-              C'est tout petit, et ultra pénible à souder
-            </aside>
-          </section>
-          <section>
-            <h3>Et puis...</h3>
+          <h3>70's / 80's</h3>
+          <img src="/images/lsi-adm-3a.jpg" />
+          <p class="source">
+            Source :
+            <a target="_blank"
+              href="https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys">https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys</a>
+          </p>
+          <aside class="notes" aria-label="notes">
             <ul>
-              <li>les switches</li>
-              <li>les keycaps</li>
-            </ul>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Les switches</h2>
-            <img
-              src="/images/flims/les-visiteurs-jour-nuit.webp"
-              alt="gif animé de jacquouille dans le film 'les visiteurs'"
-            />
-            <p><i>(On dit des interrupteurs)</i></p>
-          </section>
-          <section>
-            <h3>Ceux qui font du bruit</h3>
-          </section>
-          <section>
-            <h3>Ceux qui n'en font pas</h3>
-          </section>
-          <section>
-            <h3>Linéaire / Tactile / Clicky</h3>
-            <img
-              src="/images/switch-types.gif"
-              alt="gif animé montrant les mécanisme d'interrupteurs clavier"
-            />
-            <p class="source">
-              Source:
-              <a
-                target="_blank"
-                href="https://thegamingsetup.com/guides/cherry-red-vs-brown"
-                >https://thegamingsetup.com/guides/cherry-red-vs-brown</a
-              >
-            </p>
-          </section>
-          <section>
-            <h3>High vs Low profile</h3>
-            <img src="/images/switch-high-vs-low.jpg" />
-            <p class="source">
-              Source:
-              <a
-                target="_blank"
-                href="https://hirosarts.com/low-profile-switches-guide/"
-                >https://hirosarts.com/low-profile-switches-guide/</a
-              >
-            </p>
-          </section>
-          <section>
-            <h3>MX vs choc</h3>
-            <table>
-              <tr>
-                <td>
-                  <img src="/images/switch-mx.webp" />
-                </td>
-                <td>
-                  <img src="/images/switch-choc.webp" />
-                </td>
-              </tr>
-            </table>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Keycaps, Keycaps everywhere</h2>
-            <img src="/images/flims/jim-carrey-typing.webp" />
-            <p><i>(On dit des dessus de touches)</i></p>
-          </section>
-          <section>
-            <h3>Différents types de touches (profiles)</h3>
-            <img src="/images/keycap-profiles.webp" />
-          </section>
-          <section>
-            <h3>Différents profils</h3>
-            <img
-              alt=""
-              src="/images/keycap-profiles-image.webp"
-              style="max-width: 28%"
-            />
-          </section>
-          <section>
-            <h3>Différentes tailles</h3>
-            <img src="/images/keysizes.webp" />
-          </section>
-          <section>
-            <h3>Différents plastiques</h3>
-            <ul>
-              <li>ABS (Acrylonitrile Butadiene Styrene)</li>
-              <li>PBT (polybutylene terephthalate)</li>
-            </ul>
-            <aside class="notes" aria-label="notes">
-              ABS: lisse et brillant, PBT: texturé, mat, Bon c'est bon, j'ai
-              tout le matériel, maintenant je passe à l'assemblage
-            </aside>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Mon 1er build</h2>
-            <img
-              src="/images/my-first-build-lily58.jpg"
-              style="max-width: 80%"
-              alt="Photo d'un clavier scindé ergonomique, modèle lily58"
-            />
-            <p>Aurora Lily58</p>
-          </section>
-          <section>
-            <h3>Budget</h3>
-            <img src="/images/budget-lily58.png" />
-          </section>
-          <section>
-            <h3>Stream!</h3>
-            <img src="/images/stream-montage.png" />
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Atelier soudure</h2>
-            <img
-              src="/images/how-to-solder-reference-guide-section-1.jpg"
-              alt="How to solder"
-            />
-            <p class="source">
-              Source:
-              <a
-                target="_blank"
-                href="https://www.makerspaces.com/how-to-solder/"
-                >https://www.makerspaces.com/how-to-solder/</a
-              >
-            </p>
-          </section>
-          <section>
-            <h3>Le fer à souder</h3>
-            <img
-              src="/images/soldering-iron-picture.jpg"
-              style="max-width: 50%"
-              alt="Photo d'un fer à souder avec support et éponge"
-            />
-            <aside class="notes">Choisissez en un bon, à pointe fine.</aside>
-          </section>
-          <section>
-            <h3>Le fer à souder (2)</h3>
-            <img
-              src="/images/soldering-iron-meme.webp"
-              style="max-width: 80%"
-              alt="Stock photo"
-            />
-            <aside class="notes">
-              Evidemment on ne touche pas la partie chaude <br />
-              aussi ventilateur et étain
-            </aside>
-          </section>
-          <section>
-            <h3>Type de soudure selon le composant</h3>
-            <!-- TODO -->
-            <table>
-              <tr>
-                <td><img src="/images/soldering-axial.png" /></td>
-                <td><img src="/images/soldering-surface-mount.png" /></td>
-              </tr>
-            </table>
-            <p>Source: https://diodes.com</p>
-          </section>
-          <section>
-            <h3>Position des pattes</h3>
-            <img src="/images/ready-to-solder.jpeg" style="max-width: 80%" />
-            <aside class="notes" aria-label="notes">
-              Penser à redresser les pattes des diodes lors de la soudure, sinon
-              ca fait des gros ptés.
-            </aside>
-          </section>
-          <section>
-            <h3>A few moments later...</h3>
-          </section>
-          <section>
-            <h3>Presque fini</h3>
-            <img
-              src="/images/my-second-build-all.jpeg"
-              style="max-width: 80%"
-            />
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Programmer son clavier</h2>
-          </section>
-          <section>
-            <h3>Le firmware</h3>
-            <ul>
-              <li class="fragment">QMK</li>
-              <li class="fragment">ZMK</li>
-              <li class="fragment">via</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Les keymaps</h3>
-            <ul>
-              <li>keymap.json</li>
-              <li>rules.mk</li>
-            </ul>
-          </section>
-          <section
-            data-background-iframe="https://config.qmk.fm/#/splitkb/aurora/lily58/rev1/LAYOUT"
-            data-background-interactive
-            data-preload
-          ></section>
-          <section>
-            <h3>keymap.json</h3>
-            <img
-              src="/images/keymap-json-format.png"
-              alt="Capture d'écran d'un fichier JSON contenant les codes de touches"
-            />
-            <aside class="notes">
-              <ul>
-                <li>Possibilté de convertir en C, mais export plus possible</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>KeyCodes</h3>
-            <ul>
-              <li><b>KC_A</b>: <kbd>a</kbd></li>
-              <li><b>KC_B</b>: <kbd>b</kbd></li>
-              <li><b>KC_LSHFT</b>: <kbd>Shift</kbd> gauche</li>
-              <li><b>KC_ESC</b>: <kbd>Echap</kbd></li>
-              <li>Et caetera...</li>
-            </ul>
-            <p class="source">
-              Source:
-              <a
-                href="https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md"
-                >https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md</a
-              >
-            </p>
-          </section>
-          <section>
-            <h3>Layer functions</h3>
-            <ul>
-              <li><b>MO(x)</b>: Momentary turn layer on</li>
-              <li><b>TG(x)</b>: Toggle layer on/off</li>
-              <li><b>DF(x)</b>: Sets default layer</li>
-            </ul>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Pratique si vous voulez tester plusieurs dispositions</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Mod key combinations</h3>
-            <table>
-              <tr>
-                <td>LShift(KC_X)</td>
-                <td>RShift(KC_X)</td>
-              </tr>
-              <tr>
-                <td>LCtrl(KC_X)</td>
-                <td>RCtrl(KC_X)</td>
-              </tr>
-              <tr>
-                <td>LAlt(KC_X)</td>
-                <td>RAlt(KC_X)</td>
-              </tr>
-              <tr>
-                <td>LGui(KC_X)</td>
-                <td>RGui(KC_X)</td>
-              </tr>
-            </table>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>
-                  En paramètre entre les accolades on mets la touche voule pour
-                  accéder au caractère qui correspond à shift + KC_X
-                </li>
-                <li>une pression = ctrl + x</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Mod key combinations (2)</h3>
-            <table>
-              <tr>
-                <td>RSA(KC_X)</td>
-                <td>
-                  (right <kbd>shift</kbd> + right <kbd>alt</kbd> + <kbd>x</kbd>)
-                </td>
-              </tr>
-              <tr class="fragment">
-                <td>MEH(KC_X)</td>
-                <td>
-                  (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>alt</kbd> +
-                  <kbd>x</kbd>)
-                </td>
-              </tr>
-              <tr class="fragment">
-                <td>HYPR(KC_X)</td>
-                <td>
-                  (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>alt</kbd> +
-                  <kbd>win</kbd> + <kbd>x</kbd>)
-                </td>
-              </tr>
-            </table>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>
-                  Permets de faire des combinaisons de touches modificatrices
-                </li>
-              </ul>
-              Source:
-              https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
-            </aside>
-          </section>
-          <section>
-            <h3>Modifier on hold</h3>
-            <table>
-              <tr>
-                <td>LShift_T(KC_X)</td>
-                <td>RShift_T(KC_X)</td>
-              </tr>
-              <tr>
-                <td>LCtrl_T(KC_X)</td>
-                <td>RCtrl_T(KC_X)</td>
-              </tr>
-              <tr>
-                <td>LAlt_T(KC_X)</td>
-                <td>RAlt_T(KC_X)</td>
-              </tr>
-              <tr>
-                <td>LGui_T(KC_X)</td>
-                <td>RGui_T(KC_X)</td>
-              </tr>
-            </table>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Modifier when HELD. other key when tapped</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Tap Dance</h3>
-
-            <img
-              src="/images/finger-tap-dance.gif"
-              alt="Doigts tapotant sur une table"
-            />
-            <aside class="notes">
-              <ul>
-                <li>1 tap = 1 caractères</li>
-                <li>2 taps = autre caractères</li>
-                <li>3 taps, etc</li>
-              </ul>
-            </aside>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Mes <strike>futurs</strike> builds</h2>
-            <p>Et surtout, tout est open-source !</p>
-          </section>
-          <section>
-            <h3>Lily58</h3>
-            <img src="/images/keymap-lily58.png" />
-            <p>
-              <a target="_blank" href="https://github.com/kata0510/Lily58"
-                >https://github.com/kata0510/Lily58</a
-              >
-            </p>
-          </section>
-          <section>
-            <img
-              src="/images/benjilegnard-lily58.jpeg"
-              style="max-width: 80%"
-            />
-          </section>
-          <section>
-            <h3>Corne</h3>
-            <img src="/images/corne-layer-0.png" />
-            <p>
-              <a target="_blank" href="https://github.com/foostan/crkbd"
-                >https://github.com/foostan/crkbd</a
-              >
-            </p>
-          </section>
-          <section>
-            <video
-              data-autoplay
-              autoplay
-              loop
-              muted
-              src="/images/benjilegnard-corne.mp4"
-            ></video>
-          </section>
-          <section>
-            <h3>Ferris</h3>
-            <img
-              src="/images/keymap-sweep.png"
-              alt="Carte des touches d'un clavier Ferris sweep"
-            />
-            <p>
-              <a target="_blank" href="https://github.com/davidphilipbarr/Sweep"
-                >https://github.com/davidphilipbarr/Sweep</a
-              >
-            </p>
-          </section>
-          <section>
-            <img src="/images/benjilegnard-sweep.jpeg" style="max-width: 80%" />
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>34 touches?</h2>
-          </section>
-          <section>
-            <h4>Couche 0</h4>
-            <img
-              src="/images/sweep-0.png"
-              alt="Carte des touches d'un clavier Ferris sweep"
-            />
-          </section>
-          <section>
-            <h4>Couche 1/D : majeur gauche</h4>
-            <img
-              src="/images/sweep-1.png"
-              alt="Carte des touches d'un clavier Ferris sweep"
-            />
-          </section>
-          <section>
-            <h4>Couche 2/K : majeur droit</h4>
-            <img
-              src="/images/sweep-2.png"
-              alt="Carte des touches d'un clavier Ferris sweep"
-            />
-          </section>
-          <section>
-            <h4>Couche 3/F : index gauche</h4>
-            <img
-              src="/images/sweep-3.png"
-              alt="Carte des touches d'un clavier Ferris sweep"
-            />
-          </section>
-          <section>
-            <h4>Couche 4/J : index droit</h4>
-            <img
-              src="/images/sweep-4.png"
-              alt="Carte des touches d'un clavier Ferris sweep"
-            />
-          </section>
-          <section>
-            <h4>Couche 5/F : annulaire gauche</h4>
-            <img
-              src="/images/sweep-5.png"
-              alt="Carte des touches d'un clavier Ferris sweep"
-            />
-          </section>
-          <section>
-            <h4>Couche 6/L : annulaire droit</h4>
-            <img
-              src="/images/sweep-6.png"
-              alt="Carte des touches d'un clavier Ferris sweep"
-            />
-          </section>
-          <section>
-            <h4>Couche 7 : pouce droit</h4>
-            <img
-              src="/images/sweep-7.png"
-              alt="Carte des touches d'un clavier Ferris sweep"
-            />
-            <aside class="notes">la couche vim</aside>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Problèmes rencontrés</h2>
-          </section>
-          <section>
-            <h3>Le cé cédille</h3>
-            <ul>
-              <li class="fragment">Existe pas en qwerty</li>
-              <li class="fragment">
-                Solution: utiliser le layout US intl with dead keys
-              </li>
-              <li class="fragment">
-                Touches mortes: <kbd>`</kbd>+<kbd>e</kbd>=<kbd>è</kbd>
-              </li>
-              <li class="fragment">
-                Mettre un altGR (right alt) sur son layer 0
+              <li>Micro-ordinateur, Naissance d'apple</li>
+              <li>
+                Les ordinateurs deviennent assez petits pour rentrer dans les
+                foyers
               </li>
             </ul>
-          </section>
-          <section>
-            <h3>Passer d'azerty en qwerty</h3>
-            <ul>
-              <li>Configurer 2 langues de saisie</li>
-              <li>Windows : <kbd>shift</kbd> + <kbd>capslock</kbd></li>
-              <li>Linux (gnome) : <kbd>super</kbd> + <kbd>space</kbd></li>
-            </ul>
-          </section>
-          <section>
-            <h3>Changer ses habitudes</h3>
-            <ul>
-              <li class="fragment">
-                Compliqué quand on tape depuis longtemps sur le même layout
-              </li>
-              <li class="fragment">
-                Rien n'est insurmontable, il suffit de répéter les choses.
-              </li>
-              <li class="fragment">"It gets easier"</li>
-            </ul>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>
-                  Mémoire musculaire, Index droit veut taper sur T, G, B et
-                  index gauche sur Y, H, N
-                </li>
-                <li>2 semaines un peu pénibles</li>
-                <li>Il faut apprendre à ré-apprendre</li>
-                <li>Moi j'ai surtout appris que :</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Je ne savais pas taper sur clavier</h3>
-            <img
-              src="/images/touch-typing-keyboard.webp"
-              alt="Doigts par colonne"
-            />
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Touch-typing</li>
-                <li>Utiliser ses dix doigts</li>
-                <li>Ne pas regarder son clavier: puissance</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Dactylo / touch-typing</h3>
-            <ul>
-              <li><a href="https://www.typingclub.com/">typingclub.com</a></li>
-              <li><a href="https://wwww.typing.guru">typing.guru</a></li>
-            </ul>
-          </section>
-          <section>
-            <h3>S'entraîner: monkeytype</h3>
-            <img
-              src="/images/monkeytype-training.jpeg"
-              alt="capture d'écran d'un live twitch ou benjamin legrand s'entraine au clavier"
-            />
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Suivez moi sur twitch</li>
-                <li>compteur de wpm (20 wpm c'est minable)</li>
-                <li>
-                  tests configurables: code javascript, francais, ponctuation,
-                  nombres
-                </li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Faites vous des cheat-sheets!</h3>
-            <img
-              src="/images/use-cheatsheets.jpeg"
-              style="max-width: 70%"
-              alt="photo d'un portable avec une feuille d'aide couvrant le clavier"
-            />
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Avantage : force à utiliser le clavier, pas de trackpad</li>
-                <li>Meilleur moyen d'apprendre</li>
-              </ul>
-            </aside>
-          </section>
+          </aside>
         </section>
+
         <section>
-          <section>
-            <h2>Ressources / Aide</h2>
-          </section>
-          <section>
-            <h3>Thanks, reddit</h3>
-            <ul>
-              <li><a href="" target="_blank">/r/ErgoMechKeyboards/</a></li>
-              <li><a href="" target="_blank">/r/olkb/</a></li>
-              <li><a href="https://kbd.news" target="_blank">kbd.news</a></li>
-            </ul>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Communauté de malades</li>
-                <li>
-                  Discords existent mais valent pas le coup d'être mentionnés
-                </li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Shops</h3>
+          <h3>HJKL</h3>
+          <img src="/images/adm-3a-hjkl-keyboard.jpg" />
+          <p class="source">
+            Source :
+            <a target="_blank"
+              href="https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys">https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys</a>
+          </p>
+          <aside class="notes" aria-label="notes">
             <ul>
               <li>
-                <a href="https://splitkb.com" target="_blank">splitkb.com</a>
+                Premier clavier à avoir les touches fléchées sur la home row
               </li>
-              <li><a href="https://keeb.io" target="_blank">keeb.io</a></li>
-              <li>
-                <a href="https://littlekeyboards.com" target="_blank"
-                  >littlekeyboards.com</a
-                >
-              </li>
-              <li class="fragment">Google est votre ami</li>
             </ul>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Privilégier les boutiques européennes</li>
-                <li>
-                  Attention au frais de douane, notemment sur les batteries
-                </li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Derniers conseils</h3>
+          </aside>
+        </section>
+
+        <section>
+          <h3>90's / 00's globalisation</h3>
+          <img src="/images/inside-a-membrane-keyboard.png" />
+          <aside class="notes" aria-label="notes">
             <ul>
-              <li class="fragment">Apprenez les vim motions</li>
-              <li class="fragment">Débranchez vos souris</li>
-              <li class="fragment">
-                Apprenez les raccourcis de vos OS et apps
-              </li>
-              <li class="fragment">
-                Utilisez un gestionnaire de fenêtre en "carrelage"<br />(i3,
-                sway)
+              <li>On a tous eu ce genre de clavier chez nous</li>
+              <li>
+                Pas cher à construire en masse, mais irréparable, monobloc
               </li>
             </ul>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>plugins vim motions disponibles dans tous les bons IDEs</li>
-                <li>
-                  peut-être sans souris vous vous inquièterez un peu plus de
-                  l'accessibilité
-                </li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h3>Conclusion</h3>
-            <p>Faites le pour le comfort, pas pour la vitesse</p>
-            <aside class="notes" aria-label="notes">
-              <ul>
-                <li>Bizarre génie ? moi je trouve ca incroyable</li>
-                <li>
-                  j'espère vous avoir montré les avantages et les possibilités
-                  de faire son clavier ergonomique
-                </li>
-                <li>Et vous avoir donné envie d'en faire un vous même</li>
-                <li>
-                  Idée bizarre ou de génie? je vous laisse faire votre avis
-                </li>
-              </ul>
-            </aside>
-          </section>
+          </aside>
         </section>
         <section>
-          <section>
-            <h2>Merci</h2>
-            <div class="qr-codes">
-              <a
-                target="_blank"
-                href="https://github.com/benjilegnard/make-your-own-keyboard/#readme"
-              >
-                Slides:<br />
-                <img
-                  src="images/qrcode-slides.png"
-                  alt="Les sources sont ici"
-                />
-              </a>
-              <img
-                src="images/logo-codeurs-en-seine.png"
-                alt="logo de la conférence Codeurs en Seine 2025"
-                style="max-width: 20%"
-              />
-              <a
-                target="_blank"
-                href="https://openfeedback.io/jLatxj2p4GVAkWoMLDnl/2025-11-20/HHU3vNyhPTJsEnwBlR9V"
-              >
-                Feedback: <br />
-                <img
-                  src="images/qrcode-codeursenseine-2025.png"
-                  alt="Laissez moi un feedback !"
-              /></a>
-            </div>
-          </section>
+          <h3>Retour aux sources ?</h3>
+          <img src="/images/keyboards-gaming.jpg" />
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>
+                fin d'années 2000 retour en foce de ce qu'on appelle clavier
+                mécanique
+              </li>
+              <li>à destination des gameurs</li>
+              <li>Précision</li>
+            </ul>
+          </aside>
         </section>
-      </div>
+      </section>
+      <section>
+        <section>
+          <h2>So many keys...</h2>
+          <img src="/images/flims/dont-need-roads.webp"
+            alt="capture du film 'Retour vers le futur' avec le texte 'routes ? là ou on va on a pas besoin, de routes'" />
+          <p>Là où on va on a pas besoin, de touches</p>
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Voilà pour un bref historique</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>100% layout</h3>
+          <img src="/images/keyboard-layouts-100.png" />
+        </section>
+        <section>
+          <h3>80% layout</h3>
+          <img src="/images/keyboard-layouts-80-pct.png" />
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Tenkeyless, plus de numpad</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>60% layout</h3>
+          <img src="/images/keyboard-layouts-60-pct.jpg" />
+        </section>
+        <section>
+          <h3>40% layout</h3>
+          <img src="/images/keyboard-layouts-40-pct.jpg" />
+        </section>
+        <section>
+          <h3>and less</h3>
+          <img src="/images/keyboard-lily58.png" style="max-width: 80%" />
+          <p class="source">
+            Source:
+            <a target="_blank" href="https://github.com/kata0510/Lily58">https://github.com/kata0510/Lily58</a>
+          </p>
+        </section>
+        <section>
+          <h3>and even less</h3>
+          <img alt="photo du clavier ergonomique en deux partie : le 'corne'" src="/images/josef-corne.png"
+            style="max-width: 60%" />
+          <p class="source">
+            Source:
+            <a target="_blank" href="https://josef-adamcik.cz/electronics/corne-keyboard-build-log.html">
+              https://josef-adamcik.cz/electronics/corne-keyboard-build-log.html</a>
+          </p>
+        </section>
+        <section>
+          <h3>And what even is that ?</h3>
+          <img src="/images/keyboards-fifi.jpg" />
+          <p class="source">
+            Source:
+            <a target="_blank"
+              href="https://www.reddit.com/r/ErgoMechKeyboards/comments/mqw13x/my_new_fifi_split_keyboard_using_the_miryoku/">
+              https://www.reddit.com/r/ErgoMechKeyboards/comments/mqw13x/my_new_fifi_split_keyboard_using_the_miryoku/</a>
+          </p>
+          <aside class="notes" aria-label="notes">Clavier FIFI</aside>
+        </section>
+        <section>
+          <h3>And that ?</h3>
+          <img src="/images/dactyl-manuform-diykeyboard.com.jpg" style="max-width: 70%" />
+          <p>Dactyl manuform</p>
+          <aside class="notes" aria-label="notes">
+            Un clavier c'est pas obgligé d'etre plat
+          </aside>
+        </section>
+        <section>
+          <h3>Do we need something else ?</h3>
+          <img src="/images/the-key-launch-opt1.png"
+            alt="photo d'un clavier créé par stackoverflow pour un premier avril, il y a trois touches, ctrl, C et V" />
+          <aside class="notes" aria-label="notes">
+            C'est une blague, poisson d'avril de stack overflow
+          </aside>
+        </section>
+        <section>
+          <h3>Do we need something else ?<br />(2025 update)</h3>
+          <img src="/images/tab-enter-chatgpt.png" alt="photo d'un clavier avec uniquement deux touches, tab et enter"
+            style="max-height: 40vh" />
+          <aside class="notes" aria-label="notes">
+            Promis, ca sera la seule image IAgénérée du talk
+          </aside>
+        </section>
+        <section>
+          <h3>
+            And the list goes on...
+          </h3>
+          <div class="scroll-down-up-background" style="background-image: url(/images/screenshot-split-keyboards-gallery.png);
+            width: 100%;
+            height: 50vh;
+            background-size: cover;
+            margin: 0 auto;
+            "></div>
+        </section>
+        <section>
+          <h3>Split keyboards</h3>
+
+          <p class="source">
+            Source du slide précédent:<br />
+            <img src="images/qrcode-split-keyboards-gallery.png" /><br />
+            <a target="_blank"
+              href="https://aposymbiont.github.io/split-keyboards/">https://aposymbiont.github.io/split-keyboards/</a>
+          </p>
+          <aside class="notes" aria-label="notes">
+            On a vu un peu tout les modèles de clavier à disposition. Pourquoi
+            les splits keyboard c'est bien? pour comprendre ca il faut qu'on
+            parle d'ergonomie
+          </aside>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Ergonomie</h2>
+          <p>
+            Adaptation d'un environnement de travail (outils, matériel,
+            organisation…) aux besoins de l'utilisateur.
+          </p>
+        </section>
+        <section>
+          <h3>Ergonomie (2)</h3>
+          <table>
+            <tr>
+              <td>
+                <img src="/images/keyboards-ergonomics.jpg" />
+              </td>
+              <td>
+                <ul>
+                  <li class="fragment">Bon fauteuil</li>
+                  <li class="fragment">Écran à hauteur des yeux</li>
+                  <li class="fragment">Conseils sur le clavier?</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <aside class="notes" aria-label="notes"></aside>
+        </section>
+        <section>
+          <h3>TMS</h3>
+          <ul>
+            <li>Troubles Musculo-squelettiques</li>
+            <li class="fragment">
+              En augmentation constante, 60% depuis 2003
+            </li>
+            <li class="fragment">
+              Touche (entre autres) les poignets, les doigts
+            </li>
+            <li class="fragment">
+              causé par des contraintes sur le corps, mouvements non-naturel
+            </li>
+          </ul>
+          <p class="source fragment">
+            Source:
+            <a target="_blank"
+              href="https://www.ameli.fr/assure/sante/themes/tms/comprendre-troubles-musculosquelettiques">https://www.ameli.fr/assure/sante/themes/tms/comprendre-troubles-musculosquelettiques</a>
+          </p>
+          <aside class="notes" aria-label="notes"></aside>
+        </section>
+        <section>
+          <h3>Staggered ?</h3>
+          <img src="/images/staggered-vs-ortholinear.png" style="max-width: 80%"
+            alt="Photo d'un clavier en disposition de touches 'décalées' comparé à un clavier ortholinéaire ou toutes les touches sont sur une grille et de la mème taille" />
+        </section>
+        <section>
+          <h3>Ortholinear ?</h3>
+          <img src="/images/ortholinear-planck.webp" style="max-width: 80%"
+            alt="photo d'un calvier ortholinéaire, le planck" />
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Le planck</li>
+              <li>Principe: aligné verticalement ET horizontalement</li>
+              <li>Touches de la même taille (1U)</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Staggered</h3>
+          <p>Oui, mais verticalement</p>
+          <img src="/images/keyboard-lily58.png" style="max-width: 80%" alt="" />
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Décalage vertical</li>
+              <li>Grappe de pouces</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Tenting</h3>
+          <p>Inclinaison</p>
+          <img src="/images/tripod-tilt-for-split-keyboard.jpg" style="max-width: 80%" alt="" />
+          <p class="source">
+            Source:
+            <a target="_blank"
+              href="https://falbatech.click/products/Magsafe-Tripod-tilt-tent-for-keyboards-p613836666">
+              falba.tech
+            </a>
+          </p>
+        </section>
+        <section>
+          <h3>Pourquoi découper un clavier ?</h3>
+          <img src="/images/flims/cite-de-la-peur-ca-va-couper.webp"
+            alt="Gif animé extrait du film 'la cité de la peur' lorsqu'un projectionniste se fait attaquer à la faucille, et il dit 'attention chérie, ca va trancher'" />
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Clavier coupé / scindé / tranché?</li>
+              <li>Position relachée des épaules</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Pas bien</h3>
+          <img src="/images/wrists-posture-fitforworksg.webp"
+            alt="Illustration des mains sur un clavier, quand les poignets sont tordus, c'est pas bon" />
+          <p class="source">
+            Source:
+            <a target="_blank" href="https://fitforworksg.com/typing-and-ergonomics-what-is-important/">
+              https://fitforworksg.com/typing-and-ergonomics-what-is-important/</a>
+          </p>
+        </section>
+        <section>
+          <h3>Bien</h3>
+          <img src="/images/good-posture-fitforworksg.webp" style="max-width: 70%"
+            alt="Illustration des mains sur un clavier, quand les poignets sont droits, c'est une bonne posture" />
+          <p class="source">
+            Source:
+            <a target="_blank" href="https://fitforworksg.com/typing-and-ergonomics-what-is-important/">
+              https://fitforworksg.com/typing-and-ergonomics-what-is-important/</a>
+          </p>
+          <aside class="notes" aria-label="notes">
+            Posture compliquée à tenir, bras sur le torse Tension sur les
+            épaules
+          </aside>
+        </section>
+        <section>
+          <h3>La home row ?</h3>
+          <img src="/images/home-keys-position.png"
+            alt="schéma montrant les touches d'un clavier avec la silhouette des mains positionnées sur la rangée principale" />
+
+          <aside class="notes" aria-label="notes">
+            Principe en usage efficace du clavier : Vos doigts au repos sont
+            sur cette ligne. Pour ca qu'il y a des petits bumps sur F et J,
+            généralement c'est là qu'on mets ses index Plus les lettres
+            usuelles sont proche de la home row moins on fait d'effort pour
+            l'atteindre
+          </aside>
+        </section>
+        <section>
+          <h3>DVORAK</h3>
+          <img src="/images/dvorak.svg" />
+          <aside class="notes" aria-label="notes">
+            Touche usuelle de la home row. Pas vraiment de gain énorme.
+          </aside>
+        </section>
+        <section>
+          <h3>BÉPO</h3>
+          <img src="/images/bépo_simplifié.png" />
+
+          <aside class="notes" aria-label="notes">
+            Variante de dvorak adapté. Mon conseil: garder les lettres en
+            azerty, on y est habituées,
+          </aside>
+        </section>
+        <section>
+          <h3>AZERTY, pour du dev ?</h3>
+          <img src="/images/azerty.png" />
+          <p class="fragment">🤮</p>
+        </section>
+        <section>
+          <h3>Les couches ?</h3>
+          <ul>
+            <li class="fragment">Vous les utilisez déjà</li>
+            <li class="fragment">Shift, Alt, Alt+gr, fn</li>
+            <li class="fragment">Raise / Lower</li>
+          </ul>
+        </section>
+        <section>
+          <img src="/images/corne-layer-0.png" />
+        </section>
+        <section>
+          <img src="/images/corne-layer-1.png" />
+        </section>
+        <section>
+          <img src="/images/corne-layer-2.png" />
+        </section>
+        <section>
+          <img src="/images/corne-layer-3.png" />
+        </section>
+        <section>
+          <h3>
+            Avantages des couches<br />
+            pour le développement
+          </h3>
+          <ul>
+            <li class="fragment">Peu de mouvement des doigts</li>
+            <li class="fragment">Accès facilité aux caractères spéciaux</li>
+            <li class="fragment">Personnalisation</li>
+          </ul>
+        </section>
+        <section>
+          <h3>LISP</h3>
+          <img src="/images/lisp-joke.png" />
+          <aside class="notes">
+            C'est une blague évidemment.<br />
+            Bon maintenant je suis convaincu, j'en veux un. Qu'est ce qu'il
+            faut encore que je voie
+          </aside>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Dis moi papa, comment ça marche, un clavier ?</h2>
+          <img src="/images/flims/welcome-to-the-matrix.webp" />
+        </section>
+        <section>
+          <h3>Bienvenue dans la matrice</h3>
+          <img src="/images/9x9-keyboard-matrix.jpg" style="max-width: 40%"
+            alt="schéma simplifié de l'électronique d'un clavier une matrice avec colonnes et lignes, et un interrupteur et diodes à chaque croisement" />
+
+          <aside class="notes" aria-label="notes">
+            Plein d'interrupteurs. Electroniquement c'est pas hyper compliqué,
+            soit le courant passe, soit il passe pas
+          </aside>
+        </section>
+        <section>
+          <h3>Schéma complet</h3>
+          <img src="/images/corne-schema.png" style="max-width: 80%"
+            alt="schéma électronique d'une partie d'un clavier corne" />
+          <!-- TODO -->
+        </section>
+        <section>
+          <h3>Composants principaux</h3>
+          <img src="/images/iris-pe-case-build_480x480.webp" alt="schema d'assemblage d'un clavier iris" />
+          <p class="source">
+            Source:
+            <a target="_blank" href="https://keeb.io/collections/iris-split-ergonomic-keyboard">keeb.io</a>
+          </p>
+        </section>
+        <section>
+          <h2>Les circuits imprimés</h2>
+          <img src="/images/kicad-corne-pcb.png" style="max-width: 80%" alt="vue d'un logiciel de conception" />
+
+          <aside class="notes" aria-label="notes">
+            - circuit notable car meme PCB pour la partie gauche et droite
+            <br />
+            - KICAD: logiciel open source de CAD
+          </aside>
+        </section>
+        <section>
+          <h3>qu'est ce qu'on y connecte ?</h3>
+          <img src="/images/kirya-kit.webp" style="max-width: 80%"
+            alt="photo d'un kit de composants électroniques pour construire son propre clavier ergonomique, il s'agit du modèle kyria de splitkb" />
+          <!-- TODO -->
+        </section>
+        <section>
+          <h3>Microcontrôleur</h3>
+          <img src="/images/elite-pi.webp" style="max-width: 80%" alt="photo d'un micro-controlleur" />
+          <aside class="notes" aria-label="notes">
+            à noter que si vous voulez faire du bluetooth / sans fil, celui là
+            conviendra pas
+          </aside>
+        </section>
+        <section>
+          <h3>écrans OLED</h3>
+          <img src="/images/screen-on-corne.jpeg" style="max-width: 80%"
+            alt="photo d'un écran OLED sur un clavier ergonomique en deux parties" />
+          <aside class="notes" aria-label="notes">
+            écrans pour afficher des infos sur le clavier
+          </aside>
+        </section>
+        <section>
+          <h3>Lumière !</h3>
+          <img src="/images/damn-leds.webp" style="max-width: 80%"
+            alt="Photo de composants électronique, des diodes électro-luminescentes en gros plan" />
+          <aside class="notes" aria-label="notes">
+            C'est tout petit, et ultra pénible à souder
+          </aside>
+        </section>
+        <section>
+          <h3>Et puis...</h3>
+          <ul>
+            <li>les switches</li>
+            <li>les keycaps</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Les switches</h2>
+          <img src="/images/flims/les-visiteurs-jour-nuit.webp"
+            alt="gif animé de jacquouille dans le film 'les visiteurs'" />
+          <p><i>(On dit des interrupteurs)</i></p>
+        </section>
+        <section>
+          <h3>Ceux qui font du bruit</h3>
+        </section>
+        <section>
+          <h3>Ceux qui n'en font pas</h3>
+        </section>
+        <section>
+          <h3>Linéaire / Tactile / Clicky</h3>
+          <img src="/images/switch-types.gif" alt="gif animé montrant les mécanisme d'interrupteurs clavier" />
+          <p class="source">
+            Source:
+            <a target="_blank"
+              href="https://thegamingsetup.com/guides/cherry-red-vs-brown">https://thegamingsetup.com/guides/cherry-red-vs-brown</a>
+          </p>
+        </section>
+        <section>
+          <h3>High vs Low profile</h3>
+          <img src="/images/switch-high-vs-low.jpg" />
+          <p class="source">
+            Source:
+            <a target="_blank"
+              href="https://hirosarts.com/low-profile-switches-guide/">https://hirosarts.com/low-profile-switches-guide/</a>
+          </p>
+        </section>
+        <section>
+          <h3>MX vs choc</h3>
+          <table>
+            <tr>
+              <td>
+                <img src="/images/switch-mx.webp" />
+              </td>
+              <td>
+                <img src="/images/switch-choc.webp" />
+              </td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Keycaps, Keycaps everywhere</h2>
+          <img src="/images/flims/jim-carrey-typing.webp" />
+          <p><i>(On dit des dessus de touches)</i></p>
+        </section>
+        <section>
+          <h3>Différents types de touches (profiles)</h3>
+          <img src="/images/keycap-profiles.webp" />
+        </section>
+        <section>
+          <h3>Différents profils</h3>
+          <img alt="" src="/images/keycap-profiles-image.webp" style="max-width: 28%" />
+        </section>
+        <section>
+          <h3>Différentes tailles</h3>
+          <img src="/images/keysizes.webp" />
+        </section>
+        <section>
+          <h3>Différents plastiques</h3>
+          <ul>
+            <li>ABS (Acrylonitrile Butadiene Styrene)</li>
+            <li>PBT (polybutylene terephthalate)</li>
+          </ul>
+          <aside class="notes" aria-label="notes">
+            ABS: lisse et brillant, PBT: texturé, mat, Bon c'est bon, j'ai
+            tout le matériel, maintenant je passe à l'assemblage
+          </aside>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Mon 1er build</h2>
+          <img src="/images/my-first-build-lily58.jpg" style="max-height: 40vh"
+            alt="Photo d'un clavier scindé ergonomique, modèle lily58" />
+          <p>Aurora Lily58</p>
+        </section>
+        <section>
+          <h3>Budget</h3>
+          <img src="/images/budget-lily58.png" />
+        </section>
+        <section>
+          <h3>Stream!</h3>
+          <img src="/images/stream-montage.png" />
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Atelier soudure</h2>
+          <img src="/images/how-to-solder-reference-guide-section-1.jpg" alt="How to solder" />
+          <p class="source">
+            Source:
+            <a target="_blank"
+              href="https://www.makerspaces.com/how-to-solder/">https://www.makerspaces.com/how-to-solder/</a>
+          </p>
+        </section>
+        <section>
+          <h3>Le fer à souder</h3>
+          <img src="/images/soldering-iron-picture.jpg" style="max-width: 50%"
+            alt="Photo d'un fer à souder avec support et éponge" />
+          <aside class="notes">Choisissez en un bon, à pointe fine.</aside>
+        </section>
+        <section>
+          <h3>Le fer à souder (2)</h3>
+          <img src="/images/soldering-iron-meme.webp" style="max-width: 80%" alt="Stock photo" />
+          <aside class="notes">
+            Evidemment on ne touche pas la partie chaude <br />
+            aussi ventilateur et étain
+          </aside>
+        </section>
+        <section>
+          <h3>Type de soudure selon le composant</h3>
+          <table>
+            <tr>
+              <td><img src="/images/soldering-axial.png" /></td>
+              <td><img src="/images/soldering-surface-mount.png" /></td>
+            </tr>
+          </table>
+          <p>Source: https://diodes.com</p>
+        </section>
+        <section>
+          <h3>Position des pattes</h3>
+          <img src="/images/ready-to-solder.jpeg" style="max-width: 80%" />
+          <aside class="notes" aria-label="notes">
+            Penser à redresser les pattes des diodes lors de la soudure, sinon
+            ca fait des gros ptés.
+          </aside>
+        </section>
+        <section>
+          <h3>A few moments later...</h3>
+        </section>
+        <section>
+          <h3>Presque fini</h3>
+          <img src="/images/my-second-build-all.jpeg" style="max-width: 80%" />
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Programmer son clavier</h2>
+        </section>
+        <section>
+          <h3>Le firmware</h3>
+          <ul>
+            <li class="fragment">QMK</li>
+            <li class="fragment">ZMK</li>
+            <li class="fragment">via</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Les keymaps</h3>
+          <ul>
+            <li>keymap.json</li>
+            <li>rules.mk</li>
+          </ul>
+        </section>
+        <section data-background-iframe="https://config.qmk.fm/#/splitkb/aurora/lily58/rev1/LAYOUT"
+          data-background-interactive data-preload></section>
+        <section>
+          <h3>keymap.json</h3>
+          <img src="/images/keymap-json-format.png"
+            alt="Capture d'écran d'un fichier JSON contenant les codes de touches" />
+          <aside class="notes">
+            <ul>
+              <li>Possibilté de convertir en C, mais export plus possible</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>KeyCodes</h3>
+          <ul>
+            <li><b>KC_A</b>: <kbd>a</kbd></li>
+            <li><b>KC_B</b>: <kbd>b</kbd></li>
+            <li><b>KC_LSHFT</b>: <kbd>Shift</kbd> gauche</li>
+            <li><b>KC_ESC</b>: <kbd>Echap</kbd></li>
+            <li>Et caetera...</li>
+          </ul>
+          <p class="source">
+            Source:
+            <a
+              href="https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md">https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md</a>
+          </p>
+        </section>
+        <section>
+          <h3>Layer functions</h3>
+          <ul>
+            <li><b>MO(x)</b>: Momentary turn layer on</li>
+            <li><b>TG(x)</b>: Toggle layer on/off</li>
+            <li><b>DF(x)</b>: Sets default layer</li>
+          </ul>
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Pratique si vous voulez tester plusieurs dispositions</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Mod key combinations</h3>
+          <table>
+            <tr>
+              <td>LShift(KC_X)</td>
+              <td>RShift(KC_X)</td>
+            </tr>
+            <tr>
+              <td>LCtrl(KC_X)</td>
+              <td>RCtrl(KC_X)</td>
+            </tr>
+            <tr>
+              <td>LAlt(KC_X)</td>
+              <td>RAlt(KC_X)</td>
+            </tr>
+            <tr>
+              <td>LGui(KC_X)</td>
+              <td>RGui(KC_X)</td>
+            </tr>
+          </table>
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>
+                En paramètre entre les accolades on mets la touche voule pour
+                accéder au caractère qui correspond à shift + KC_X
+              </li>
+              <li>une pression = ctrl + x</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Mod key combinations (2)</h3>
+          <table>
+            <tr>
+              <td>RSA(KC_X)</td>
+              <td>
+                (right <kbd>shift</kbd> + right <kbd>alt</kbd> + <kbd>x</kbd>)
+              </td>
+            </tr>
+            <tr class="fragment">
+              <td>MEH(KC_X)</td>
+              <td>
+                (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>alt</kbd> +
+                <kbd>x</kbd>)
+              </td>
+            </tr>
+            <tr class="fragment">
+              <td>HYPR(KC_X)</td>
+              <td>
+                (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>alt</kbd> +
+                <kbd>win</kbd> + <kbd>x</kbd>)
+              </td>
+            </tr>
+          </table>
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>
+                Permets de faire des combinaisons de touches modificatrices
+              </li>
+            </ul>
+            Source:
+            https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
+          </aside>
+        </section>
+        <section>
+          <h3>Modifier on hold</h3>
+          <table>
+            <tr>
+              <td>LShift_T(KC_X)</td>
+              <td>RShift_T(KC_X)</td>
+            </tr>
+            <tr>
+              <td>LCtrl_T(KC_X)</td>
+              <td>RCtrl_T(KC_X)</td>
+            </tr>
+            <tr>
+              <td>LAlt_T(KC_X)</td>
+              <td>RAlt_T(KC_X)</td>
+            </tr>
+            <tr>
+              <td>LGui_T(KC_X)</td>
+              <td>RGui_T(KC_X)</td>
+            </tr>
+          </table>
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Modifier when HELD. other key when tapped</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Tap Dance</h3>
+
+          <img src="/images/finger-tap-dance.gif" alt="Doigts tapotant sur une table" />
+          <aside class="notes">
+            <ul>
+              <li>1 tap = 1 caractères</li>
+              <li>2 taps = autre caractères</li>
+              <li>3 taps, etc</li>
+            </ul>
+          </aside>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Mes <strike>futurs</strike> builds</h2>
+          <p>Et surtout, tout est open-source !</p>
+        </section>
+        <section>
+          <h3>Lily58</h3>
+          <img src="/images/keymap-lily58.png" />
+          <p>
+            <a target="_blank" href="https://github.com/kata0510/Lily58">https://github.com/kata0510/Lily58</a>
+          </p>
+        </section>
+        <section>
+          <img src="/images/benjilegnard-lily58.jpeg" style="max-width: 80%" />
+        </section>
+        <section>
+          <h3>Corne</h3>
+          <img src="/images/corne-layer-0.png" />
+          <p>
+            <a target="_blank" href="https://github.com/foostan/crkbd">https://github.com/foostan/crkbd</a>
+          </p>
+        </section>
+        <section>
+          <video data-autoplay autoplay loop muted src="/images/benjilegnard-corne.mp4"></video>
+        </section>
+        <section>
+          <h3>Ferris</h3>
+          <img src="/images/keymap-sweep.png" alt="Carte des touches d'un clavier Ferris sweep" />
+          <p>
+            <a target="_blank"
+              href="https://github.com/davidphilipbarr/Sweep">https://github.com/davidphilipbarr/Sweep</a>
+          </p>
+        </section>
+        <section>
+          <img src="/images/benjilegnard-sweep.jpeg" style="max-width: 80%" />
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>34 touches?</h2>
+        </section>
+        <section>
+          <h4>Couche 0</h4>
+          <img src="/images/sweep-0.png" alt="Carte des touches d'un clavier Ferris sweep" />
+        </section>
+        <section>
+          <h4>Couche 1/D : majeur gauche</h4>
+          <img src="/images/sweep-1.png" alt="Carte des touches d'un clavier Ferris sweep" />
+        </section>
+        <section>
+          <h4>Couche 2/K : majeur droit</h4>
+          <img src="/images/sweep-2.png" alt="Carte des touches d'un clavier Ferris sweep" />
+        </section>
+        <section>
+          <h4>Couche 3/F : index gauche</h4>
+          <img src="/images/sweep-3.png" alt="Carte des touches d'un clavier Ferris sweep" />
+        </section>
+        <section>
+          <h4>Couche 4/J : index droit</h4>
+          <img src="/images/sweep-4.png" alt="Carte des touches d'un clavier Ferris sweep" />
+        </section>
+        <section>
+          <h4>Couche 5/F : annulaire gauche</h4>
+          <img src="/images/sweep-5.png" alt="Carte des touches d'un clavier Ferris sweep" />
+        </section>
+        <section>
+          <h4>Couche 6/L : annulaire droit</h4>
+          <img src="/images/sweep-6.png" alt="Carte des touches d'un clavier Ferris sweep" />
+        </section>
+        <section>
+          <h4>Couche 7 : pouce droit</h4>
+          <img src="/images/sweep-7.png" alt="Carte des touches d'un clavier Ferris sweep" />
+          <aside class="notes">la couche vim</aside>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Problèmes rencontrés</h2>
+        </section>
+        <section>
+          <h3>Le cé cédille</h3>
+          <ul>
+            <li class="fragment">Existe pas en qwerty</li>
+            <li class="fragment">
+              Solution: utiliser le layout US intl with dead keys
+            </li>
+            <li class="fragment">
+              Touches mortes: <kbd>`</kbd>+<kbd>e</kbd>=<kbd>è</kbd>
+            </li>
+            <li class="fragment">
+              Mettre un altGR (right alt) sur son layer 0
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Passer d'azerty en qwerty</h3>
+          <ul>
+            <li>Configurer 2 langues de saisie</li>
+            <li>Windows : <kbd>shift</kbd> + <kbd>capslock</kbd></li>
+            <li>Linux (gnome) : <kbd>super</kbd> + <kbd>space</kbd></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Changer ses habitudes</h3>
+          <ul>
+            <li class="fragment">
+              Compliqué quand on tape depuis longtemps sur le même layout
+            </li>
+            <li class="fragment">
+              Rien n'est insurmontable, il suffit de répéter les choses.
+            </li>
+            <li class="fragment">"It gets easier"</li>
+          </ul>
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>
+                Mémoire musculaire, Index droit veut taper sur T, G, B et
+                index gauche sur Y, H, N
+              </li>
+              <li>2 semaines un peu pénibles</li>
+              <li>Il faut apprendre à ré-apprendre</li>
+              <li>Moi j'ai surtout appris que :</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Je ne savais pas taper sur clavier</h3>
+          <img src="/images/touch-typing-keyboard.webp" alt="Doigts par colonne" />
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>à 30 ans passés dont surement 15 professionellement</li>
+              <li>jamais eu de cours de dactylo </li>
+              <li>Utiliser ses dix doigts: Touch-typing</li>
+              <li>Ne pas regarder son clavier: puissance</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Dactylo / touch-typing</h3>
+          <ul>
+            <li><a href="https://www.typingclub.com/">typingclub.com</a></li>
+            <li><a href="https://wwww.typing.guru">typing.guru</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>S'entraîner: monkeytype</h3>
+          <img src="/images/monkeytype-training.jpeg"
+            alt="capture d'écran d'un live twitch ou benjamin legrand s'entraine au clavier" />
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Suivez moi sur twitch</li>
+              <li>compteur de wpm (20 wpm c'est minable)</li>
+              <li>
+                tests configurables: code javascript, francais, ponctuation,
+                nombres
+              </li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Faites vous des cheat-sheets!</h3>
+          <img src="/images/use-cheatsheets.jpeg" style="max-width: 70%"
+            alt="photo d'un portable avec une feuille d'aide couvrant le clavier" />
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Avantage : force à utiliser le clavier, pas de trackpad</li>
+              <li>Meilleur moyen d'apprendre</li>
+            </ul>
+          </aside>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Ressources / Aide</h2>
+        </section>
+        <section>
+          <h3>Thanks, reddit</h3>
+          <ul>
+            <li><a href="" target="_blank">/r/ErgoMechKeyboards/</a></li>
+            <li><a href="" target="_blank">/r/olkb/</a></li>
+            <li><a href="https://kbd.news" target="_blank">kbd.news</a></li>
+          </ul>
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Communauté de malades</li>
+              <li>
+                Discords existent mais valent pas le coup d'être mentionnés
+              </li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Shops</h3>
+          <ul>
+            <li>
+              <a href="https://splitkb.com" target="_blank">splitkb.com</a>
+            </li>
+            <li><a href="https://keeb.io" target="_blank">keeb.io</a></li>
+            <li>
+              <a href="https://littlekeyboards.com" target="_blank">littlekeyboards.com</a>
+            </li>
+            <li class="fragment">Google est votre ami</li>
+          </ul>
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Privilégier les boutiques européennes</li>
+              <li>
+                Attention au frais de douane, notemment sur les batteries
+              </li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Derniers conseils</h3>
+          <ul>
+            <li class="fragment">Apprenez les vim motions</li>
+            <li class="fragment">Débranchez vos souris</li>
+            <li class="fragment">
+              Apprenez les raccourcis de vos OS et apps
+            </li>
+            <li class="fragment">
+              Utilisez un gestionnaire de fenêtre en "carrelage"<br />(i3,
+              sway)
+            </li>
+          </ul>
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>plugins vim motions disponibles dans tous les bons IDEs</li>
+              <li>
+                peut-être sans souris vous vous inquièterez un peu plus de
+                l'accessibilité
+              </li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h3>Conclusion</h3>
+          <p>Faites le pour le comfort, pas pour la vitesse</p>
+          <aside class="notes" aria-label="notes">
+            <ul>
+              <li>Bizarre génie ? moi je trouve ca incroyable</li>
+              <li>
+                j'espère vous avoir montré les avantages et les possibilités
+                de faire son clavier ergonomique
+              </li>
+              <li>Et vous avoir donné envie d'en faire un vous même</li>
+              <li>
+                Idée bizarre ou de génie? je vous laisse faire votre avis
+              </li>
+            </ul>
+          </aside>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Merci</h2>
+          <div class="qr-codes">
+            <a target="_blank" href="https://github.com/benjilegnard/make-your-own-keyboard/#readme">
+              Slides:<br />
+              <img src="images/qrcode-slides.png" alt="Les sources sont ici" />
+            </a>
+            <img src="images/logo-codeurs-en-seine.png" alt="logo de la conférence Codeurs en Seine 2025"
+              style="max-width: 20%" />
+            <a target="_blank" href="https://openfeedback.io/jLatxj2p4GVAkWoMLDnl/2025-11-20/HHU3vNyhPTJsEnwBlR9V">
+              Feedback: <br />
+              <img src="images/qrcode-codeursenseine-2025.png" alt="Laissez moi un feedback !" /></a>
+          </div>
+        </section>
+      </section>
     </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+  </div>
+  <canvas id="particles-background"></canvas>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

@@ -4,6 +4,7 @@ import "./style.scss";
 import Reveal from "reveal.js";
 import Markdown from "reveal.js/plugin/markdown/markdown";
 import Notes from "reveal.js/plugin/notes/notes";
+import "./particles";
 
 let deck = new Reveal({
   plugins: [Markdown, Notes],

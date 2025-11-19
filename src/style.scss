@@ -13,7 +13,7 @@
 @import url("https://fonts.bunny.net/css2?family=Poppins:wght@700&family=Source+Sans+Pro&display=swap");
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #fff;
+$backgroundColor: transparent;
 
 $mainColor: #222;
 $headingColor: #222;
@@ -39,6 +39,7 @@ $heading4Size: 1em;
 
 // Theme template ------------------------------
 @import "reveal.js/css/theme/template/theme";
+
 // ---------------------------------------------
 kbd {
   border: 2px solid #c4c4b0;
@@ -59,6 +60,28 @@ kbd {
   justify-content: space-evenly;
   align-items: center;
 }
+
 .qr-codes a {
   display: block;
+}
+
+#particles-background {
+  position: absolute;
+  inset: 0;
+  opacity: .2;
+}
+
+@keyframes scroll-down-up {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.scroll-down-up-background {
+  animation: scroll-down-up 20s linear infinite;
+  background-repeat: repeat-y;
 }
