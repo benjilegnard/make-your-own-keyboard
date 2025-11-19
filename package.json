@@ -1,22 +1,22 @@
 {
-  "name": "diy-keyboard-2023",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist"
-  },
-  "devDependencies": {
-    "@types/reveal.js": "^4.4.0",
-    "sass": "^1.57.1",
-    "typescript": "^5.2.2",
-    "vite": "^4.0.0"
-  },
-  "dependencies": {
-    "gh-pages": "^4.0.0",
-    "reveal.js": "^4.4.0"
-  }
+    "name": "diy-keyboard-2023",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist"
+    },
+    "devDependencies": {
+        "@types/reveal.js": "^5.2.1",
+        "sass": "^1.93.3",
+        "typescript": "^5.9.3",
+        "vite": "^4.5.14"
+    },
+    "dependencies": {
+        "gh-pages": "^6.3.0",
+        "reveal.js": "^5.2.1"
+    }
 }
